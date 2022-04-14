@@ -1,0 +1,49 @@
+h1 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 1.4px;
+  color: #f2f2f2;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+  color: #e6e6e6;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 550px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+.about {
+  padding: 2rem;
+  padding-top: 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about .download {
+  padding: 0.3rem 3rem;
+  background-color: rgba(132, 156, 224, 0.9);
+  color: black;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+}
+/*# sourceMappingURL=about.css.map */

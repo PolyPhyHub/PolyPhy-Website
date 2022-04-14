@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+h1 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 1.4px;
+  color: $heading-color;
+  margin-bottom: 15px;
+  @media #{$media-mobile} {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+  color: $text-color;
+  font-size: 14px;
+  @media #{$media-mobile} {
+    font-size: 12px;
+  }
+}
+
+.about {
+  padding: 2rem;
+  padding-top: 0;
+  max-width: 1000px;
+  margin: auto;
+  .download {
+    padding: 0.3rem 3rem;
+    background-color: rgba(132, 156, 224, 0.9);
+    color: black;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 20px auto;
+  }
+}

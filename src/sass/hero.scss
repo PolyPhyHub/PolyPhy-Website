@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  h1 {
+    z-index: 1000;
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+    font-size: 60px;
+    letter-spacing: 1.4px;
+    margin-bottom: 0;
+    @media #{$media-mobile} {
+      font-size: 40px;
+    }
+  }
+  p {
+    margin: 10px 0;
+    @media #{$media-mobile} {
+      font-size: 12px;
+    }
+  }
+  .download {
+    padding: 0.5rem 2.5rem;
+    background-color: rgba(172, 141, 225, 0.9);
+    color: black;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+}
+
+.cta-arrow {
+  height: 60px;
+  position: relative;
+  transform: rotate(45deg);
+  border-right: 5px solid rgb(240, 240, 240);
+  border-bottom: 5px solid rgb(240, 240, 240);
+  width: 60px;
+  border-radius: 0 0 5px 0;
+  margin-bottom: 2rem;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+  cursor: pointer;
+}
+
+@keyframes shake {
+    50% {
+      transform: rotate(45deg) translate3d(10px, 10px, 0);
+    }
+    
+    100% {
+      transform: rotate(45deg) translate3d(0, 0, 0);
+    }
+  }
