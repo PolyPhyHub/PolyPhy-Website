@@ -1,6 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { particles } from "../Constants/particles";
+import { Link } from "@mui/material";
 
 const Hero = () => {
   return (
@@ -18,9 +19,17 @@ const Hero = () => {
           <div className="download">Download Now!</div>
         </div>
       </div>
-      <div style={{display: "flex", justifyContent: "center", transform: "translateY(-150px)" }}>
-        <div className="cta-arrow"></div>
-      </div>
+      <Link href="#about" underline="none">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            transform: "translateY(-150px)",
+          }}
+        >
+          <div className="cta-arrow"></div>
+        </div>
+      </Link>
     </>
   );
 };

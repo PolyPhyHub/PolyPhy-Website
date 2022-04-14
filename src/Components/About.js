@@ -10,6 +10,23 @@ const About = () => {
         Physarum Machine (MCPM) algorithm inspired by the foraging behavior of
         Physarum polycephalum 'slime mold'.
       </p>
+      <p>
+        Polyphorm, an interactive visualization and model fitting tool that
+        provides a novel approach for investigating cosmological datasets.
+        Through a fast computational simulation method inspired by the behavior
+        of Physarum polycephalum, an unicellular slime mold organism that
+        efficiently forages for nutrients, astrophysicists are able to
+        extrapolate from sparse datasets, such as galaxy maps archived in the
+        Sloan Digital Sky Survey, and then use these extrapolations to inform
+        analyses of a wide range of other data, such as spectroscopic
+        observations captured by the Hubble Space Telescope. Researchers can
+        interactively update the simulation by adjusting model parameters, and
+        then investigate the resulting visual output to form hypotheses about
+        the data. We describe details of Polyphorm's simulation model and its
+        interaction and visualization modalities, and we evaluate Polyphorm
+        through three scientific use cases that demonstrate the effectiveness of
+        our approach.
+      </p>
       <br />
       <p>
         Polyphorm has two tightly coupled main components: simulation and
@@ -38,9 +55,7 @@ const About = () => {
         the input points are contained in it) as well as the plausibility of the
         obtained filamentary structures.
       </p>
-      <div className="download">
-          Try it out!
-      </div>
+      <div className="download">Try it out!</div>
     </div>
   );
 };

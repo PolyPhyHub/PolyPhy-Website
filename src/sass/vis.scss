@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.vis-container {
+  padding: 2rem;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(18, 3, 80) 100%);
+  .image-list1 {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .image-list2 {
+    max-width: 850px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}

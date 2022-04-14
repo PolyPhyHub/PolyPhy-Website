@@ -8,6 +8,7 @@
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   letter-spacing: 0.7px;
+  scroll-behavior: smooth;
 }
 
 #root {

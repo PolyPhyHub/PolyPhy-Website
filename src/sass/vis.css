@@ -1,0 +1,18 @@
+.vis-container {
+  padding: 2rem;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#120350));
+  background: linear-gradient(180deg, black 0%, #120350 100%);
+}
+
+.vis-container .image-list1 {
+  max-width: 850px;
+  margin: auto;
+}
+
+.vis-container .image-list2 {
+  max-width: 850px;
+  margin: auto;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=vis.css.map */
