@@ -16,11 +16,11 @@
 }
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - 6rem);
 }
 
 #tsparticles {
-  height: 100vh;
+  height: calc(100vh - 6rem);
   position: absolute;
   left: 0;
   right: 0;

@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 6rem);
   padding: 2rem;
   text-align: center;
   h1 {
@@ -23,6 +23,7 @@
   }
   p {
     margin: 10px 0;
+    max-width: 800px;
     @media #{$media-mobile} {
       font-size: 12px;
     }
@@ -38,25 +39,41 @@
   }
 }
 
+.cta-arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-150px);
+  @media #{$media-mobile} {
+    transform: translateY(-100px);
+  }
+}
+
 .cta-arrow {
-  height: 60px;
   position: relative;
   transform: rotate(45deg);
-  border-right: 5px solid rgb(240, 240, 240);
-  border-bottom: 5px solid rgb(240, 240, 240);
+  border-right: 3px solid rgb(240, 240, 240);
+  border-bottom: 3px solid rgb(240, 240, 240);
   width: 60px;
-  border-radius: 0 0 5px 0;
+  height: 60px;
+  border-radius: 0 0 3px 0;
   margin-bottom: 2rem;
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   cursor: pointer;
+  @media #{$media-mobile} {
+    height: 30px;
+    width: 30px;
+    border-radius: 0 0 2px 0;
+    border-right: 2px solid rgb(240, 240, 240);
+    border-bottom: 2px solid rgb(240, 240, 240);
+  }
 }
 
 @keyframes shake {
-    50% {
-      transform: rotate(45deg) translate3d(10px, 10px, 0);
-    }
-    
-    100% {
-      transform: rotate(45deg) translate3d(0, 0, 0);
-    }
+  50% {
+    transform: rotate(45deg) translate3d(10px, 10px, 0);
   }
+
+  100% {
+    transform: rotate(45deg) translate3d(0, 0, 0);
+  }
+}

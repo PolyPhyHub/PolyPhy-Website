@@ -14,4 +14,17 @@
     margin: auto;
     margin-top: 20px;
   }
+
+  .download {
+    padding: 0.3rem 3rem;
+    background-color: rgba(226, 150, 233, 0.9);
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 20px auto;
+    p {
+      color: black;
+    }
+  }
 }

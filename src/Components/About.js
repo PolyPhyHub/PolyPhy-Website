@@ -5,12 +5,6 @@ const About = () => {
     <div id="about" className="about">
       <h1>About Polyphorm</h1>
       <p>
-        Polyphorm is an interactive tool to analyze intergalactic gas and dark
-        matter filaments (together known as 'Cosmic web') using the Monte Carlo
-        Physarum Machine (MCPM) algorithm inspired by the foraging behavior of
-        Physarum polycephalum 'slime mold'.
-      </p>
-      <p>
         Polyphorm, an interactive visualization and model fitting tool that
         provides a novel approach for investigating cosmological datasets.
         Through a fast computational simulation method inspired by the behavior

@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+.navbar {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media #{$media-tablet} {
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+}

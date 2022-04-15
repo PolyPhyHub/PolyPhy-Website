@@ -13,7 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 6rem);
   padding: 2rem;
   text-align: center;
 }
@@ -36,6 +36,7 @@
 
 .content p {
   margin: 10px 0;
+  max-width: 800px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -54,19 +55,47 @@
   cursor: pointer;
 }
 
+.cta-arrow-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+}
+
+@media only screen and (max-width: 550px) {
+  .cta-arrow-wrapper {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
 .cta-arrow {
-  height: 60px;
   position: relative;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  border-right: 5px solid #f0f0f0;
-  border-bottom: 5px solid #f0f0f0;
+  border-right: 3px solid #f0f0f0;
+  border-bottom: 3px solid #f0f0f0;
   width: 60px;
-  border-radius: 0 0 5px 0;
+  height: 60px;
+  border-radius: 0 0 3px 0;
   margin-bottom: 2rem;
   -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
           animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .cta-arrow {
+    height: 30px;
+    width: 30px;
+    border-radius: 0 0 2px 0;
+    border-right: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+  }
 }
 
 @-webkit-keyframes shake {

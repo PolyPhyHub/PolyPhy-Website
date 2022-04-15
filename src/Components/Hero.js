@@ -14,19 +14,19 @@ const Hero = () => {
             <p>
               Structural Analysis of Cosmological Datasets via Interactive
               Physarum Polycephalum Visualisation
+              <br />
+              Polyphorm is an interactive tool to analyze intergalactic gas and
+              dark matter filaments (together known as 'Cosmic web') using the
+              Monte Carlo Physarum Machine (MCPM) algorithm inspired by the
+              foraging behavior of Physarum polycephalum 'slime mold'.
             </p>
           </i>
+
           <div className="download">Download Now!</div>
         </div>
       </div>
       <Link href="#about" underline="none">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            transform: "translateY(-150px)",
-          }}
-        >
+        <div className="cta-arrow-wrapper">
           <div className="cta-arrow"></div>
         </div>
       </Link>
