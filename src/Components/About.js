@@ -49,7 +49,6 @@ const About = () => {
         the input points are contained in it) as well as the plausibility of the
         obtained filamentary structures.
       </p>
-      <div className="download">Try it out!</div>
     </div>
   );
 };

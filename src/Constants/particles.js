@@ -254,7 +254,7 @@ export const particles = {
     links: {
       blink: false,
       color: {
-        value: "#3e4df0",
+        value: "#e64b17",
       },
       consent: false,
       distance: 150,

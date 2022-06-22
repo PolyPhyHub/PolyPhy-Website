@@ -17,10 +17,21 @@ const Navlinks = ({ dir, sp, setOpen }) => {
           <CloseIcon />
         </IconButton>
       ) : null}
-      <p>About</p>
-      <p>Visualizations</p>
-      <p>Functions</p>
-      <p>Download</p>
+      <li>
+        <a href="/">About</a>
+      </li>
+      <li>
+        <a href="/">Documentation</a>
+      </li>
+      <li>
+        <a href="/">References</a>
+      </li>
+      <li>
+        <a href="/">Contribution</a>
+      </li>
+      <li>
+        <a href="/">Community</a>
+      </li>
     </Stack>
   );
 };
@@ -47,7 +58,9 @@ const Navbar = () => {
             backgroundColor: "black",
           }}
         >
+        <div className="navbar">
           <Navlinks dir="column" sp={5} setOpen={setOpen}></Navlinks>
+          </div>
         </Box>
       </Drawer>
     </div>

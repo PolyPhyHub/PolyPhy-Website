@@ -21,8 +21,6 @@ const Hero = () => {
               foraging behavior of Physarum polycephalum 'slime mold'.
             </p>
           </i>
-
-          <div className="download">Download Now!</div>
         </div>
       </div>
       <Link href="#about" underline="none">

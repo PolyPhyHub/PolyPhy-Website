@@ -12,7 +12,7 @@
   h1 {
     z-index: 1000;
     position: relative;
-    font-family: "Playfair Display", serif;
+    font-family: 'Bitter', serif;
     font-weight: lighter;
     font-size: 60px;
     letter-spacing: 1.4px;
@@ -28,21 +28,14 @@
       font-size: 12px;
     }
   }
-  .download {
-    padding: 0.5rem 2.5rem;
-    background-color: rgba(172, 141, 225, 0.9);
-    color: black;
-    font-weight: 700;
-    border-radius: 50px;
-    margin-top: 15px;
-    cursor: pointer;
-  }
 }
 
 .cta-arrow-wrapper {
   display: flex;
   justify-content: center;
   transform: translateY(-150px);
+  width: fit-content;
+  margin: auto;
   @media #{$media-mobile} {
     transform: translateY(-100px);
   }

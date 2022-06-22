@@ -21,7 +21,7 @@
 .content h1 {
   z-index: 1000;
   position: relative;
-  font-family: "Playfair Display", serif;
+  font-family: 'Bitter', serif;
   font-weight: lighter;
   font-size: 60px;
   letter-spacing: 1.4px;
@@ -45,16 +45,6 @@
   }
 }
 
-.content .download {
-  padding: 0.5rem 2.5rem;
-  background-color: rgba(172, 141, 225, 0.9);
-  color: black;
-  font-weight: 700;
-  border-radius: 50px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
 .cta-arrow-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +54,10 @@
           justify-content: center;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 @media only screen and (max-width: 550px) {

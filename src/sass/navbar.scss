@@ -9,4 +9,41 @@
     justify-content: flex-start;
     padding: 1rem;
   }
+  li {
+    list-style: none; 
+    display: table-cell; 
+  position: relative; 
+  }
+  a {
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    font-size: 14px;
+    transition: ease-in 0.3s;
+    @media #{$media-mobile} {
+      font-size: 12px;
+    }
+  }
+  a:hover {
+    color: #f59d50;;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: $text-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 120%; 
+    left: -10%; 
+  }
 }
