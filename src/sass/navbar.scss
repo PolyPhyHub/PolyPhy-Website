@@ -28,7 +28,7 @@
     }
   }
   a:hover {
-    color: #f59d50;;
+    color: #ffa600;
   }
   a:after {    
     background: none repeat scroll 0 0 transparent;
@@ -45,5 +45,6 @@
   a:hover:after { 
     width: 120%; 
     left: -10%; 
+    background: #ff8000;
   }
 }

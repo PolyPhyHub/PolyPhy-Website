@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonSwipe from "./ButtonSwipe";
 
 const About = () => {
   return (
@@ -49,6 +50,7 @@ const About = () => {
         the input points are contained in it) as well as the plausibility of the
         obtained filamentary structures.
       </p>
+      <ButtonSwipe>Know More!</ButtonSwipe>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-var w = window.innerWidth
+var w = window.innerWidth;
 
 export const particles = {
   autoPlay: true,
@@ -254,7 +254,7 @@ export const particles = {
     links: {
       blink: false,
       color: {
-        value: "#e64b17",
+        value: "#ff6a00",
       },
       consent: false,
       distance: 150,

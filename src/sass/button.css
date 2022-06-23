@@ -1,0 +1,82 @@
+.button-swipe-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+  margin-top: 2rem;
+}
+
+.button-swipe-wrapper :active,
+.button-swipe-wrapper :hover,
+.button-swipe-wrapper :focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+.button-swipe-wrapper ::before,
+.button-swipe-wrapper ::after {
+  position: absolute;
+  content: "";
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 150px;
+  background-color: #ff8400;
+}
+
+.btn span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.8rem 3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*--- btn-1 ---*/
+.btn-1::before {
+  background-color: black;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.btn-1 span {
+  color: #ff8400;
+  border: 1.5px solid #ff8400;
+  border-radius: 10px;
+  -webkit-transition: 0.2s 0.1s;
+  transition: 0.2s 0.1s;
+}
+
+.btn-1 span:hover {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: 0.2s 0.1s;
+  transition: 0.2s 0.1s;
+}
+
+/* 1.hover-filled-slide-down */
+.btn.hover-filled-slide-down::before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.btn.hover-filled-slide-down:hover::before {
+  height: 0%;
+}
+/*# sourceMappingURL=button.css.map */
