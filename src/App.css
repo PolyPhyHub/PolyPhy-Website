@@ -12,6 +12,11 @@
   scroll-behavior: smooth;
 }
 
+*::selection {
+  background-color: #240345;
+  /* color: #000; */
+}
+
 #root {
   background-color: black;
 }

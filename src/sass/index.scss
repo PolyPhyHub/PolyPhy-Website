@@ -1,6 +1,6 @@
 @import "./hero.scss";
 @import "./about.scss";
-@import "./navbar.scss";
+@import "./navbar_footer.scss";
 @import "./button.scss";
 
 h1 {
@@ -10,7 +10,6 @@ h1 {
   font-size: 40px;
   letter-spacing: 1.4px;
   color: $heading-color;
-  margin-bottom: 15px;
   @media #{$media-mobile} {
     font-size: 30px;
     text-align: center;
