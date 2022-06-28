@@ -5,6 +5,7 @@ const About = () => {
   return (
     <div id="about" className="about">
       <h1>About Polyphorm</h1>
+      <br />
       <p>
         Polyphorm, an interactive visualization and model fitting tool that
         provides a novel approach for investigating cosmological datasets.

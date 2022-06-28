@@ -67,8 +67,11 @@
     }
     p {
       margin-left: 10px;
-      text-decoration: underline;
       line-height: 2rem;
+    }
+    P:hover{
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
   @media #{$media-tablet} {

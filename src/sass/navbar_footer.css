@@ -93,8 +93,12 @@
 
 .footer-wrapper .footer-column p {
   margin-left: 10px;
-  text-decoration: underline;
   line-height: 2rem;
+}
+
+.footer-wrapper .footer-column P:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 900px) {

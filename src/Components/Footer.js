@@ -26,7 +26,7 @@ const Footer = () => {
             <h2>Contribution</h2>
             <p>All Issues</p>
             <p>Open an Issue</p>
-            <p>Pull Repeated</p>
+            <p>Pull Request</p>
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={3}>
