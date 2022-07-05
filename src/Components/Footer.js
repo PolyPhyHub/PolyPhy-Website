@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </Grid>
       </Grid>
-      <p style={{textAlign: "center", transform: "translateY(30px)", opacity: "0.6"}}>Copyright © 2022 PolyPhy, Center of Research for Open Source Software</p>
+      <p style={{textAlign: "center", transform: "translateY(30px)", opacity: "0.6"}}>Copyright © {new Date().getFullYear()} PolyPhy, Center of Research for Open Source Software</p>
     </div>
   );
 };

@@ -21,13 +21,13 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         <a href="/">About</a>
       </li>
       <li>
-        <a href="/">Documentation</a>
+        <a href="/" target="_blank">Documentation</a>
       </li>
       <li>
         <a href="/">References</a>
       </li>
       <li>
-        <a href="/">Contribution</a>
+        <a href="https://cross-polyphy-docs.vercel.app/" target="_blank" rel="noreferrer">Contribution</a>
       </li>
       <li>
         <a href="/">Community</a>
