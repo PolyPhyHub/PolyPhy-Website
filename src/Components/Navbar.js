@@ -18,19 +18,39 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         </IconButton>
       ) : null}
       <li>
-        <a href="/">About</a>
+        <a className="navLinksMain" href="/">About</a>
       </li>
       <li>
-        <a href="/" target="_blank">Documentation</a>
+        <a className="navLinksMain" href="/" target="_blank">
+          Documentation
+        </a>
       </li>
       <li>
-        <a href="/">References</a>
+        <a className="navLinksMain" href="/">References</a>
       </li>
       <li>
-        <a href="https://cross-polyphy-docs.vercel.app/" target="_blank" rel="noreferrer">Contribution</a>
+        <a
+         className="navLinksMain"
+          href="https://cross-polyphy-docs.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Contribution
+        </a>
       </li>
-      <li>
-        <a href="/">Community</a>
+      <li className="dropdown-wrapper">
+        <a className="navLinksMain" href="/">Community</a>
+        <ul className="dropdown">
+          <li>
+            <a href="/">GitHub</a>
+          </li>
+          <li>
+            <a href="/">Slack </a>
+          </li>
+          <li>
+            <a href="/">Discussions</a>
+          </li>
+        </ul>
       </li>
     </Stack>
   );
@@ -58,8 +78,8 @@ const Navbar = () => {
             backgroundColor: "black",
           }}
         >
-        <div className="navbar">
-          <Navlinks dir="column" sp={5} setOpen={setOpen}></Navlinks>
+          <div className="navbar">
+            <Navlinks dir="column" sp={5} setOpen={setOpen}></Navlinks>
           </div>
         </Box>
       </Drawer>

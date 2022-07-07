@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="footer-column">
             <h2>Community</h2>
             <p>GitHub</p>
-            <p>Slack Channel</p>
+            <p>Slack</p>
             <p>Discussions</p>
           </div>
         </Grid>
