@@ -10,9 +10,20 @@ h1 {
   font-size: 40px;
   letter-spacing: 1.4px;
   color: $heading-color;
+
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1rem;
+  text-underline-offset: -1rem;
+  text-decoration-color: rgba(255, 128, 0, 0.689);
+  text-decoration-skip-ink: none; /* works in Firefox & Chrome, not in Safari */
+  text-decoration-skip: none; /* works in Safari, not in Firefox & Chrome */
+
   @media #{$media-mobile} {
     font-size: 30px;
     text-align: center;
+    text-decoration-thickness: 0.6rem;
+  text-underline-offset: -0.6rem;
   }
 }
 

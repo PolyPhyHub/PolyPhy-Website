@@ -27,7 +27,7 @@
   border-radius: 10px;
   cursor: pointer;
   min-width: 150px;
-  background-color: #ff8400;
+  background-color: #F75B00;
 }
 
 .btn span {
@@ -53,8 +53,8 @@
 }
 
 .btn-1 span {
-  color: #ff8400;
-  border: 1.5px solid #ff8400;
+  color: #F75B00;
+  border: 1.5px solid #F75B00;
   border-radius: 10px;
   -webkit-transition: 0.2s 0.1s;
   transition: 0.2s 0.1s;

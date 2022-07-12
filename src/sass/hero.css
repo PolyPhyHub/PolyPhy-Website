@@ -1,4 +1,19 @@
-.content {
+.hero {
+  position: relative;
+  min-height: calc(100vh - 6rem);
+  padding: 4rem 2rem;
+  max-width: 1500px;
+  margin: auto;
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+}
+
+@media only screen and (max-width: 550px) {
+  .hero {
+    padding: 2rem 2rem;
+  }
+}
+
+.hero .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,40 +24,49 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  min-height: calc(100vh - 6rem);
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  z-index: 1000;
 }
 
-.content h1 {
+.hero .content p {
+  margin: 10px 0;
+  max-width: 600px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 550px) {
+  .hero .content p {
+    font-size: 12px;
+  }
+}
+
+.hero .content p a {
+  color: #ff8400;
+  font-size: 16px;
+}
+
+.hero .content p a:hover {
+  text-decoration: underline;
+}
+
+.hero h1 {
   z-index: 1000;
   position: relative;
-  font-family: 'Bitter', serif;
-  font-weight: lighter;
   font-size: 60px;
-  letter-spacing: 1.4px;
+  letter-spacing: 3px;
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 550px) {
-  .content h1 {
+  .hero h1 {
     font-size: 40px;
   }
 }
 
-.content p {
-  margin: 10px 0;
-  max-width: 800px;
-}
-
-@media only screen and (max-width: 550px) {
-  .content p {
-    font-size: 12px;
-  }
+.video {
+  z-index: 999;
 }
 
 .cta-arrow-wrapper {
@@ -52,6 +76,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1000;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
   width: -webkit-fit-content;
@@ -68,6 +93,7 @@
 }
 
 .cta-arrow {
+  z-index: 1000;
   position: relative;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);

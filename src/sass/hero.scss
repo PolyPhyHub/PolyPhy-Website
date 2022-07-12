@@ -1,38 +1,61 @@
 @import "./variables.scss";
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.hero {
   position: relative;
   min-height: calc(100vh - 6rem);
-  padding: 2rem;
-  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1500px;
+  margin: auto;
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  @media #{$media-mobile} {
+    padding: 2rem 2rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    z-index: 1000;
+    p {
+      margin: 10px 0;
+      max-width: 600px;
+      z-index: 1000;
+      @media #{$media-mobile} {
+        font-size: 12px;
+      }
+      a {
+        color: $theme-amber;
+        font-size: 16px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
   h1 {
     z-index: 1000;
     position: relative;
-    font-family: 'Bitter', serif;
-    font-weight: lighter;
     font-size: 60px;
-    letter-spacing: 1.4px;
+    letter-spacing: 3px;
     margin-bottom: 0;
     @media #{$media-mobile} {
       font-size: 40px;
     }
   }
-  p {
-    margin: 10px 0;
-    max-width: 800px;
-    @media #{$media-mobile} {
-      font-size: 12px;
-    }
-  }
+}
+
+.video {
+  z-index: 999;
 }
 
 .cta-arrow-wrapper {
   display: flex;
   justify-content: center;
+  z-index: 1000;
   transform: translateY(-150px);
   width: fit-content;
   margin: auto;
@@ -42,6 +65,7 @@
 }
 
 .cta-arrow {
+  z-index: 1000;
   position: relative;
   transform: rotate(45deg);
   border-right: 3px solid rgb(240, 240, 240);
