@@ -23,7 +23,7 @@ const Hero = () => {
                 the Monte Carlo Physarum Machine (MCPM) algorithm inspired by
                 the foraging behavior of Physarum polycephalum 'slime mold'.
               </p>
-              <p><a href="/">I'm interested &#8599;	</a></p>
+              <a href="/">Get Started !</a>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>

@@ -42,13 +42,23 @@
   }
 }
 
-.hero .content p a {
-  color: #ff8400;
-  font-size: 16px;
+.hero .content a {
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  opacity: 0.9;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #ff8400;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 
-.hero .content p a:hover {
-  text-decoration: underline;
+.hero .content a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .hero h1 {
