@@ -18,17 +18,31 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         </IconButton>
       ) : null}
       <li>
-        <a className="navLinksMain" href="/">About</a>
+        <a className="navLinksMain" href="/">
+          Home
+        </a>
       </li>
       <li>
-        <a className="navLinksMain" href="/" target="_blank">
+        <a className="navLinksMain" href="/">
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          className="navLinksMain"
+          href="https://cross-polyphy-docs.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Documentation
         </a>
       </li>
       <li>
-        <a className="navLinksMain" href="/">References</a>
+        <a className="navLinksMain" href="/">
+          References
+        </a>
       </li>
-      <li>
+      {/* <li>
         <a
          className="navLinksMain"
           href="https://cross-polyphy-docs.vercel.app/"
@@ -37,9 +51,11 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         >
           Contribution
         </a>
-      </li>
+      </li> */}
       <li className="dropdown-wrapper">
-        <a className="navLinksMain" href="/">Community</a>
+        <a className="navLinksMain" href="/">
+          Community
+        </a>
         <ul className="dropdown">
           <li>
             <a href="/">GitHub</a>

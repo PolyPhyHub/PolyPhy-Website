@@ -245,13 +245,16 @@ a {
   width: 140%;
   left: -20%;
   z-index: 999;
-  margin-top: 1rem;
   padding: 0.5rem 0.7rem;
 }
 
 .navbar .dropdown li {
   list-style: none;
   line-height: 2rem;
+}
+
+.navbar .dropdown li a:hover {
+  text-decoration: underline;
 }
 
 .navbar .dropdown-wrapper:hover > .dropdown, .navbar .dropdown:hover {
