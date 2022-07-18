@@ -30,6 +30,13 @@
   z-index: 1000;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 .hero .content p {
   margin: 10px 0;
   max-width: 600px;
@@ -54,6 +61,15 @@
   border: 2px solid #ff8400;
   -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
+}
+
+@media only screen and (max-width: 550px) {
+  .hero .content a {
+    font-size: 13px;
+    padding: 0.3rem 1.5rem;
+    margin-top: 1rem;
+    border: 1.5px solid #ff8400;
+  }
 }
 
 .hero .content a:hover {
@@ -95,10 +111,10 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 900px) {
   .cta-arrow-wrapper {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
 }
 

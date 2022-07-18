@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
 }
 
 #tsparticles {

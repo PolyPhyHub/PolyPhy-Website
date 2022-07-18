@@ -20,6 +20,10 @@
     max-width: 600px;
     margin-left: auto;
     z-index: 1000;
+    @media #{$media-tablet} {
+      margin-left: 0;
+      margin-right: auto;
+    }
     p {
       margin: 10px 0;
       max-width: 600px;
@@ -27,7 +31,6 @@
       @media #{$media-mobile} {
         font-size: 12px;
       }
-      
     }
     a {
       color: #fff;
@@ -38,6 +41,13 @@
       border-radius: 10px;
       border: 2px solid $theme-amber;
       transition: 0.1s ease-in;
+      @media #{$media-mobile} {
+        font-size: 13px;
+        padding: 0.3rem 1.5rem;
+        margin-top: 1rem;
+      border: 1.5px solid $theme-amber;
+
+      }
     }
     a:hover {
       transform: scale(1.05);
@@ -66,8 +76,8 @@
   transform: translateY(-150px);
   width: fit-content;
   margin: auto;
-  @media #{$media-mobile} {
-    transform: translateY(-100px);
+  @media #{$media-tablet} {
+    transform: translateY(-20px);
   }
 }
 
