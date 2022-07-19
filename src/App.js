@@ -5,6 +5,7 @@ import About from "./Components/About";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Publications from "./Components/Publications";
 
 const darkTheme = createTheme({
   palette: {
@@ -15,12 +16,13 @@ const darkTheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
+      <Navbar />
       <div className="App">
-        <Navbar />
         <Hero />
         <About />
-        <Footer />
+        <Publications />
       </div>
+      <Footer />
     </ThemeProvider>
   );
 }

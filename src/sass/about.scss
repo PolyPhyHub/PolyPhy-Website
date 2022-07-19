@@ -6,3 +6,72 @@
   max-width: 1000px;
   margin: auto;
 }
+
+.publications-wrapper {
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.publications {
+  margin: 2rem 0;
+
+  .css-12xlkuk-MuiPaper-root:hover {
+    border-color: rgba(255, 128, 0, 0.689);
+  }
+
+  h2 {
+    font-family: "Bitter", serif;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    color: $heading-color;
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-weight: lighter;
+    @media #{$media-mobile} {
+      font-size: 13px;
+    }
+  }
+
+  .brief {
+    font-size: 12px;
+    opacity: 0.9;
+    padding: 1rem;
+    @media #{$media-mobile} {
+      font-size: 11px;
+    }
+  }
+
+  i {
+    padding: 0 1rem;
+    font-size: 12px;
+    opacity: 0.7;
+    @media #{$media-mobile} {
+      font-size: 11px;
+    }
+  }
+
+  img {
+    height: 200px;
+    width: 100%;
+    transform: translateY(4px);
+    border-radius: 0 0 4px 4px;
+    @media #{$media-mobile} {
+      height: 150px;
+    }
+  }
+}
+// .publications-wrapper::before {
+//   background: red;
+//   bottom: 100%;
+//   content: '';
+//   display: block;
+//   height: 100%;
+//   position: absolute;
+//   right: 0;
+//   transform-origin: 100% 100%;
+//   transform: rotate(-30deg);
+//   width: 150%;
+// }

@@ -109,6 +109,8 @@ a {
 
 .footer-wrapper h1 {
   text-align: center;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .footer-wrapper .footer-column {
