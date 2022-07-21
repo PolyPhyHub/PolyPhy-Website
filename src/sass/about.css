@@ -1,16 +1,26 @@
 .about {
-  padding: 2rem;
+  padding: 4rem 2rem;
   padding-top: 0;
   max-width: 1000px;
   margin: auto;
 }
 
+.about h1 {
+  -webkit-text-decoration-color: rgba(55, 1, 112, 0.7);
+          text-decoration-color: rgba(55, 1, 112, 0.7);
+}
+
 .publications-wrapper {
-  padding: 2rem;
+  padding: 4rem 2rem;
   overflow: hidden;
   position: relative;
   max-width: 1200px;
   margin: auto;
+}
+
+.publications-wrapper h1 {
+  -webkit-text-decoration-color: rgba(55, 1, 112, 0.7);
+          text-decoration-color: rgba(55, 1, 112, 0.7);
 }
 
 .publications {
@@ -73,5 +83,11 @@
   .publications img {
     height: 150px;
   }
+}
+
+.publication-route-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 4rem 2rem;
 }
 /*# sourceMappingURL=about.css.map */

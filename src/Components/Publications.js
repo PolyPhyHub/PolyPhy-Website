@@ -31,7 +31,7 @@ const Publications = () => {
           </Grid>
         </Grid>
       </div>
-      <ButtonSwipe>Read more {'>'}</ButtonSwipe>
+      <ButtonSwipe link="/publications">Read more {'>'}</ButtonSwipe>
     </div>
   );
 };

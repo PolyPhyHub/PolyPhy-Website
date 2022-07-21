@@ -1,18 +1,25 @@
 @import "./variables.scss";
 
 .about {
-  padding: 2rem;
+  padding: 4rem 2rem;
   padding-top: 0;
   max-width: 1000px;
   margin: auto;
+  h1 {
+    text-decoration-color: rgba(55, 1, 112, 0.7);
+  }
 }
 
 .publications-wrapper {
-  padding: 2rem;
+  padding: 4rem 2rem;
   overflow: hidden;
   position: relative;
   max-width: 1200px;
   margin: auto;
+
+  h1 {
+    text-decoration-color: rgba(55, 1, 112, 0.7);
+  }
 }
 
 .publications {
@@ -63,15 +70,9 @@
     }
   }
 }
-// .publications-wrapper::before {
-//   background: red;
-//   bottom: 100%;
-//   content: '';
-//   display: block;
-//   height: 100%;
-//   position: absolute;
-//   right: 0;
-//   transform-origin: 100% 100%;
-//   transform: rotate(-30deg);
-//   width: 150%;
-// }
+
+  .publication-route-wrapper {
+    max-width: 1300px;
+    margin: auto;
+    padding: 4rem 2rem;
+  }
