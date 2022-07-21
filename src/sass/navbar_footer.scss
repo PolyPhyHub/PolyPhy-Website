@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media #{$media-tablet} {
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  li {
+    list-style: none;
+    display: table-cell;
+    position: relative;
+  }
+  .navLinksMain {
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    font-size: 14px;
+    transition: ease-in 0.3s;
+    @media #{$media-mobile} {
+      font-size: 12px;
+    }
+  }
+  .navLinksMain:hover {
+    color: #ffa600;
+  }
+  .navLinksMain:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: $text-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navLinksMain:hover:after {
+    width: 120%;
+    left: -10%;
+    background: #ff8000;
+  }
+
+  .dropdown {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    background-color: #323232;
+    position: absolute;
+    width: 140%;
+    left: -20%;
+    z-index: 999;
+    padding: 0.5rem 0.7rem;
+
+    li {
+      list-style: none;
+      line-height: 2rem;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .dropdown-wrapper:hover > .dropdown,  .dropdown:hover{
+    visibility: visible;
+  }
+
+}
+
+.footer-wrapper {
+  
+  background-color: rgb(44, 44, 44);
+  padding: 4rem 2rem;
+  h1 {
+    text-align: center;
+    text-decoration-line: none;
+  }
+  .footer-column {
+    width: fit-content;
+    margin: auto;
+    h2 {
+      font-family: "Bitter", serif;
+      font-weight: lighter;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-left: 10px;
+      line-height: 2rem;
+    }
+    P:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  @media #{$media-tablet} {
+    h1 {
+      text-align: left;
+      transform: translateY(-30px);
+    }
+    .footer-column {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+}

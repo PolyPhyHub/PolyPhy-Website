@@ -1,0 +1,73 @@
+@import "./variables.scss";
+
+.about {
+  padding: 4rem 2rem;
+  padding-top: 0;
+  max-width: 1000px;
+  margin: auto;
+  h1 {
+    text-decoration-color: rgba(55, 1, 112, 0.7);
+  }
+}
+
+.publications-wrapper {
+  padding: 4rem 2rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+
+  h1 {
+    text-decoration-color: rgba(55, 1, 112, 0.7);
+  }
+}
+
+.publication {
+
+  h2 {
+    font-family: "Bitter", serif;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    color: $heading-color;
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-weight: lighter;
+    @media #{$media-mobile} {
+      font-size: 13px;
+    }
+  }
+
+  .brief {
+    font-size: 12px;
+    opacity: 0.9;
+    padding: 1rem;
+    @media #{$media-mobile} {
+      font-size: 11px;
+    }
+  }
+
+  i {
+    padding: 0 1rem;
+    font-size: 12px;
+    opacity: 0.7;
+    @media #{$media-mobile} {
+      font-size: 11px;
+    }
+  }
+
+  img {
+    height: 200px;
+    width: 100%;
+    transform: translateY(4px);
+    border-radius: 0 0 4px 4px;
+    @media #{$media-mobile} {
+      height: 150px;
+    }
+  }
+}
+
+  .publication-route-wrapper {
+    max-width: 1300px;
+    margin: auto;
+    padding: 4rem 2rem;
+  }

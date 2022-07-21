@@ -1,0 +1,85 @@
+.about {
+  padding: 4rem 2rem;
+  padding-top: 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h1 {
+  -webkit-text-decoration-color: rgba(55, 1, 112, 0.7);
+          text-decoration-color: rgba(55, 1, 112, 0.7);
+}
+
+.publications-wrapper {
+  padding: 4rem 2rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.publications-wrapper h1 {
+  -webkit-text-decoration-color: rgba(55, 1, 112, 0.7);
+          text-decoration-color: rgba(55, 1, 112, 0.7);
+}
+
+.publication h2 {
+  font-family: "Bitter", serif;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  color: #f2f2f2;
+  line-height: 1.5rem;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 550px) {
+  .publication h2 {
+    font-size: 13px;
+  }
+}
+
+.publication .brief {
+  font-size: 12px;
+  opacity: 0.9;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .publication .brief {
+    font-size: 11px;
+  }
+}
+
+.publication i {
+  padding: 0 1rem;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 550px) {
+  .publication i {
+    font-size: 11px;
+  }
+}
+
+.publication img {
+  height: 200px;
+  width: 100%;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  border-radius: 0 0 4px 4px;
+}
+
+@media only screen and (max-width: 550px) {
+  .publication img {
+    height: 150px;
+  }
+}
+
+.publication-route-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,110 @@
+@import "./variables.scss";
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 6rem);
+  padding: 4rem 2rem;
+  max-width: 1500px;
+  margin: auto;
+  @media #{$media-mobile} {
+    padding: 2rem 2rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    z-index: 1000;
+    @media #{$media-tablet} {
+      margin-left: 0;
+      margin-right: auto;
+    }
+    p {
+      margin: 10px 0;
+      max-width: 600px;
+      z-index: 1000;
+      @media #{$media-mobile} {
+        font-size: 12px;
+      }
+    }
+    a {
+      color: #fff;
+      width: fit-content;
+      padding: 0.5rem 2rem;
+      opacity: 0.9;
+      margin-top: 1.5rem;
+      border-radius: 10px;
+      border: 2px solid $theme-amber;
+      transition: 0.1s ease-in;
+      @media #{$media-mobile} {
+        font-size: 13px;
+        padding: 0.3rem 1.5rem;
+        margin-top: 1rem;
+      border: 1.5px solid $theme-amber;
+
+      }
+    }
+    a:hover {
+      transform: scale(1.05);
+    }
+  }
+  h1 {
+    z-index: 1000;
+    position: relative;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    @media #{$media-mobile} {
+      font-size: 40px;
+    }
+  }
+}
+
+.video {
+  z-index: 999;
+}
+
+.cta-arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transform: translateY(-150px);
+  width: fit-content;
+  margin: auto;
+  @media #{$media-tablet} {
+    transform: translateY(-20px);
+  }
+}
+
+.cta-arrow {
+  z-index: 1000;
+  position: relative;
+  transform: rotate(45deg);
+  border-right: 3px solid rgb(240, 240, 240);
+  border-bottom: 3px solid rgb(240, 240, 240);
+  width: 60px;
+  height: 60px;
+  border-radius: 0 0 3px 0;
+  margin-bottom: 2rem;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  cursor: pointer;
+  @media #{$media-mobile} {
+    height: 30px;
+    width: 30px;
+    border-radius: 0 0 2px 0;
+    border-right: 2px solid rgb(240, 240, 240);
+    border-bottom: 2px solid rgb(240, 240, 240);
+  }
+}
+
+@keyframes shake {
+  50% {
+    transform: rotate(45deg) translate3d(10px, 10px, 0);
+  }
+
+  100% {
+    transform: rotate(45deg) translate3d(0, 0, 0);
+  }
+}
