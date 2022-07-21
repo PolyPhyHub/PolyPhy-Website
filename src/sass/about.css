@@ -23,15 +23,7 @@
           text-decoration-color: rgba(55, 1, 112, 0.7);
 }
 
-.publications {
-  margin: 2rem 0;
-}
-
-.publications .css-12xlkuk-MuiPaper-root:hover {
-  border-color: rgba(255, 128, 0, 0.689);
-}
-
-.publications h2 {
+.publication h2 {
   font-family: "Bitter", serif;
   padding: 0 1rem;
   padding-top: 1rem;
@@ -42,36 +34,36 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .publications h2 {
+  .publication h2 {
     font-size: 13px;
   }
 }
 
-.publications .brief {
+.publication .brief {
   font-size: 12px;
   opacity: 0.9;
   padding: 1rem;
 }
 
 @media only screen and (max-width: 550px) {
-  .publications .brief {
+  .publication .brief {
     font-size: 11px;
   }
 }
 
-.publications i {
+.publication i {
   padding: 0 1rem;
   font-size: 12px;
   opacity: 0.7;
 }
 
 @media only screen and (max-width: 550px) {
-  .publications i {
+  .publication i {
     font-size: 11px;
   }
 }
 
-.publications img {
+.publication img {
   height: 200px;
   width: 100%;
   -webkit-transform: translateY(4px);
@@ -80,7 +72,7 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .publications img {
+  .publication img {
     height: 150px;
   }
 }
