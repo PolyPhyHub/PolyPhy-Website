@@ -22,7 +22,7 @@
   }
 }
 
-.publication {
+.publication_card_small, .publication_card_large {
 
   h2 {
     font-family: "Bitter", serif;
@@ -47,7 +47,6 @@
   }
 
   i {
-    padding: 0 1rem;
     font-size: 12px;
     opacity: 0.7;
     @media #{$media-mobile} {
@@ -70,4 +69,22 @@
     max-width: 1300px;
     margin: auto;
     padding: 4rem 2rem;
+  }
+
+  .publication_card_large {
+    .image-container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      background-color: black;
+      padding: 0.5rem; 
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+      vertical-align: middle;
+      transform: translateY(4px);
+      border-radius: 0 0 4px 4px;
+    }
   }
