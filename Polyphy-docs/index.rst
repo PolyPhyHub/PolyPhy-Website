@@ -11,10 +11,14 @@ Welcome to Polyphy-Docs's documentation!
    :caption: Contents:
 
 
+   how_to.rst
+   tutorials.rst
+   api.rst
+   contribution.rst
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
