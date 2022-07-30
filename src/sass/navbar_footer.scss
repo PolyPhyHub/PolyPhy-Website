@@ -9,6 +9,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #000000e5;
   @media #{$media-tablet} {
     justify-content: flex-start;
     padding: 1rem;

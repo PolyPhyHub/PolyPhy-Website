@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
-            <div style={{maxWidth: "600px"}}>
+            <div style={{ maxWidth: "600px" }}>
               <video
                 className="video"
                 src={video}
@@ -46,11 +46,12 @@ const Hero = () => {
           </Grid>
         </Grid>
       </div>
-      <Link href="#about" underline="none">
-        <div className="cta-arrow-wrapper">
+
+      <div className="cta-arrow-wrapper">
+        <Link href="#about" underline="none">
           <div className="cta-arrow"></div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </>
   );
 };

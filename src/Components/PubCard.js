@@ -12,6 +12,12 @@ export const PubCardSmall = ({ pub }) => {
           </p>
           <img src={pub.image} alt=""></img>
           <p className="brief">{pub.brief}</p>
+          <p style={{ padding: "0.5rem 1rem" }}>
+            <i>
+              Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska, Angus G.
+              Forbes
+            </i>
+          </p>
         </Paper>
       </div>
     </Grid>
