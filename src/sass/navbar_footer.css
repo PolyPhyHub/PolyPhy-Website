@@ -86,7 +86,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #323232;
+  background-color: #323232af;
   position: absolute;
   width: 140%;
   left: -20%;
