@@ -77,7 +77,8 @@
   border-radius: 0 0 4px 4px;
 }
 
-.publication-route-wrapper, .team-route-wrapper {
+.publication-route-wrapper,
+.team-route-wrapper {
   max-width: 1300px;
   margin: auto;
   padding: 2rem;
@@ -157,5 +158,124 @@
   font-size: 12px;
   font-style: italic;
   margin-left: 15px;
+}
+
+.team-route-wrapper h2 {
+  font-family: "Bitter", serif;
+  color: #f2f2f2;
+  line-height: 1.5rem;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-route-wrapper h2 {
+    font-size: 25px;
+  }
+}
+
+.team-route-wrapper svg {
+  margin: 0 8px;
+}
+
+.team-route-wrapper svg,
+.team-route-wrapper path {
+  color: #c7c5c5 !important;
+}
+
+.team-route-wrapper svg:hover,
+.team-route-wrapper path:hover {
+  color: #ffa600 !important;
+}
+
+.team-route-wrapper .sig-contri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(124, 62, 0, 0.707);
+  margin-bottom: 1rem;
+}
+
+.team-card {
+  padding: 1.5rem;
+  background: rgba(86, 86, 86, 0.326);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-card img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-card img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.team-card .team-content h3 {
+  font-family: "Bitter", serif;
+  color: #f2f2f2;
+  line-height: 1.5rem;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  text-shadow: 1px 1px 0px #ff8400;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-card .team-content h3 {
+    font-size: 15px;
+  }
+}
+
+.team-card .team-content p {
+  font-size: 12px;
+  line-height: 1.2rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-card .team-content p {
+    margin: 5px 0;
+  }
+}
+
+.team-card .team-content svg {
+  margin: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.team-card .team-content svg,
+.team-card .team-content path {
+  color: white !important;
+}
+
+.team-card .team-content svg:hover,
+.team-card .team-content path:hover {
+  color: #ffa600 !important;
 }
 /*# sourceMappingURL=about.css.map */
