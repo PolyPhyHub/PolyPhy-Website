@@ -66,6 +66,9 @@ const Navlinks = ({ dir, sp, setOpen }) => {
           <li>
             <a href="/">Discussions</a>
           </li>
+          <li>
+            <a href="/team">Team</a>
+          </li>
         </ul>
       </li>
     </Stack>
