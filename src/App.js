@@ -8,6 +8,8 @@ import Footer from "./Components/Footer";
 import Publications from "./Components/Publications";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import PublicationRoute from "./Components/PublicationRoute";
+import News from "./Components/News";
+import TeamRooute from "./Components/TeamRoute";
 
 const darkTheme = createTheme({
   palette: {
@@ -19,6 +21,7 @@ const Home = () => {
   return (
     <div className="Home">
       <Hero />
+      <News />
       <About />
       <Publications />
     </div>
@@ -29,6 +32,7 @@ const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/publications", element: <PublicationRoute /> },
+    { path: "/team", element: <TeamRooute /> },
     // ...
   ]);
   return routes;

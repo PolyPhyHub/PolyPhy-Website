@@ -178,7 +178,7 @@
 }
 
 .publications-wrapper {
-  padding: 4rem 2rem;
+  padding: 2rem;
   overflow: hidden;
   position: relative;
   max-width: 1200px;
@@ -190,7 +190,8 @@
           text-decoration-color: rgba(55, 1, 112, 0.7);
 }
 
-.publication h2 {
+.publication_card_small h2,
+.publication_card_large h2 {
   font-family: "Bitter", serif;
   padding: 0 1rem;
   padding-top: 1rem;
@@ -201,53 +202,248 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .publication h2 {
+  .publication_card_small h2,
+  .publication_card_large h2 {
     font-size: 13px;
   }
 }
 
-.publication .brief {
+.publication_card_small .brief,
+.publication_card_large .brief {
   font-size: 12px;
   opacity: 0.9;
   padding: 1rem;
 }
 
 @media only screen and (max-width: 550px) {
-  .publication .brief {
+  .publication_card_small .brief,
+  .publication_card_large .brief {
     font-size: 11px;
   }
 }
 
-.publication i {
-  padding: 0 1rem;
+.publication_card_small i,
+.publication_card_large i {
   font-size: 12px;
   opacity: 0.7;
 }
 
 @media only screen and (max-width: 550px) {
-  .publication i {
+  .publication_card_small i,
+  .publication_card_large i {
     font-size: 11px;
   }
 }
 
-.publication img {
-  height: 200px;
+.publication_card_small img,
+.publication_card_large img {
+  height: auto;
   width: 100%;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
   border-radius: 0 0 4px 4px;
 }
 
-@media only screen and (max-width: 550px) {
-  .publication img {
-    height: 150px;
+.publication-route-wrapper,
+.team-route-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.publication_card_large .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+.publication_card_large img {
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  border-radius: 0 0 4px 4px;
+}
+
+.news-wrapper {
+  background-color: rgba(33, 33, 33, 0.621);
+  padding: 2rem;
+  position: relative;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+  max-width: calc(1000px - 4rem);
+  margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .news-wrapper {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    margin: 4rem auto;
   }
 }
 
-.publication-route-wrapper {
-  max-width: 1300px;
-  margin: auto;
-  padding: 4rem 2rem;
+.news-wrapper h2 {
+  font-family: "Bitter", serif;
+  color: #f2f2f2;
+  line-height: 1.5rem;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+}
+
+@media only screen and (max-width: 550px) {
+  .news-wrapper h2 {
+    font-size: 15px;
+  }
+}
+
+.news-wrapper .tweet {
+  border-bottom: 1px solid grey;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.news-wrapper .tweet span {
+  color: #a7a1a1;
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 15px;
+}
+
+.team-route-wrapper h2 {
+  font-family: "Bitter", serif;
+  color: #f2f2f2;
+  line-height: 1.5rem;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-route-wrapper h2 {
+    font-size: 25px;
+  }
+}
+
+.team-route-wrapper svg {
+  margin: 0 8px;
+}
+
+.team-route-wrapper svg,
+.team-route-wrapper path {
+  color: #c7c5c5 !important;
+}
+
+.team-route-wrapper svg:hover,
+.team-route-wrapper path:hover {
+  color: #ffa600 !important;
+}
+
+.team-route-wrapper .sig-contri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(124, 62, 0, 0.707);
+  margin-bottom: 1rem;
+}
+
+.team-card {
+  padding: 1.5rem;
+  background: rgba(86, 86, 86, 0.326);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-card img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-card img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.team-card .team-content h3 {
+  font-family: "Bitter", serif;
+  color: #f2f2f2;
+  line-height: 1.5rem;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  text-shadow: 1px 1px 0px #ff8400;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-card .team-content h3 {
+    font-size: 15px;
+  }
+}
+
+.team-card .team-content p {
+  font-size: 12px;
+  line-height: 1.2rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .team-card .team-content p {
+    margin: 5px 0;
+  }
+}
+
+.team-card .team-content svg {
+  margin: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.team-card .team-content svg,
+.team-card .team-content path {
+  color: white !important;
+}
+
+.team-card .team-content svg:hover,
+.team-card .team-content path:hover {
+  color: #ffa600 !important;
 }
 
 a {
@@ -265,6 +461,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #000000e5;
 }
 
 @media only screen and (max-width: 900px) {
@@ -333,7 +534,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #323232;
+  background-color: #323232af;
   position: absolute;
   width: 140%;
   left: -20%;
