@@ -13,6 +13,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #000000e5;
 }
 
 @media only screen and (max-width: 900px) {
@@ -81,7 +86,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #323232;
+  background-color: #323232af;
   position: absolute;
   width: 140%;
   left: -20%;

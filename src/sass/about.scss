@@ -11,7 +11,7 @@
 }
 
 .publications-wrapper {
-  padding: 4rem 2rem;
+  padding: 2rem;
   overflow: hidden;
   position: relative;
   max-width: 1200px;
@@ -22,8 +22,8 @@
   }
 }
 
-.publication {
-
+.publication_card_small,
+.publication_card_large {
   h2 {
     font-family: "Bitter", serif;
     padding: 0 1rem;
@@ -47,7 +47,6 @@
   }
 
   i {
-    padding: 0 1rem;
     font-size: 12px;
     opacity: 0.7;
     @media #{$media-mobile} {
@@ -56,18 +55,172 @@
   }
 
   img {
-    height: 200px;
+    height: auto;
     width: 100%;
     transform: translateY(4px);
     border-radius: 0 0 4px 4px;
+  }
+}
+
+.publication-route-wrapper,
+.team-route-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.publication_card_large {
+  .image-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+    padding: 0.5rem;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+    transform: translateY(4px);
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.news-wrapper {
+  background-color: rgba(33, 33, 33, 0.621);
+  padding: 2rem;
+  position: relative;
+  transform: translateY(-80px);
+  max-width: calc(1000px - 4rem);
+  margin: auto;
+  @media #{$media-tablet} {
+    transform: translateY(-20px);
+    margin: 4rem auto;
+  }
+  h2 {
+    font-family: "Bitter", serif;
+    color: $heading-color;
+    line-height: 1.5rem;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1.3px;
     @media #{$media-mobile} {
-      height: 150px;
+      font-size: 15px;
+    }
+  }
+  .tweet {
+    border-bottom: 1px solid grey;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+    span {
+      color: rgb(167, 161, 161);
+      font-size: 12px;
+      font-style: italic;
+      margin-left: 15px;
     }
   }
 }
 
-  .publication-route-wrapper {
-    max-width: 1300px;
-    margin: auto;
-    padding: 4rem 2rem;
+.team-route-wrapper {
+  h2 {
+    font-family: "Bitter", serif;
+    color: $heading-color;
+    line-height: 1.5rem;
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1.3px;
+    margin-bottom: 2rem;
+    @media #{$media-mobile} {
+      font-size: 25px;
+    }
   }
+
+  svg {
+    margin: 0 8px;
+  }
+
+  svg,
+  path {
+    color: rgb(199, 197, 197) !important;
+  }
+  svg:hover,
+  path:hover {
+    color: rgb(255, 166, 0) !important;
+  }
+
+  .sig-contri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(124, 62, 0, 0.707);
+    margin-bottom: 1rem;
+  }
+}
+
+.team-card {
+  padding: 1.5rem;
+  background: rgba(86, 86, 86, 0.326);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    @media #{$media-mobile} {
+      height: 90px;
+      width: 90px;
+    }
+  }
+
+  .team-content {
+    h3 {
+      font-family: "Bitter", serif;
+      color: $heading-color;
+      line-height: 1.5rem;
+      font-size: 20px;
+      font-weight: lighter;
+      letter-spacing: 1.3px;
+      text-shadow: 1px 1px 0px $theme-amber;
+      @media #{$media-mobile} {
+        font-size: 15px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1.2rem;
+      margin: 10px 0;
+      @media #{$media-mobile} {
+        margin: 5px 0;
+      }
+    }
+
+    svg {
+      margin: 0;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+
+    svg,
+    path {
+      color: rgb(255, 255, 255) !important;
+    }
+
+    svg:hover,
+  path:hover {
+    color: rgb(255, 166, 0) !important;
+  }
+  }
+}

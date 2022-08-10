@@ -2,16 +2,30 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { case_studies } from "../Constants/case_studies";
 import ButtonSwipe from "./ButtonSwipe";
-import PubCard from "./PubCard";
+import { PubCardSmall, PubCardLarge } from "./PubCard";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Publications = () => {
+  const small = useMediaQuery("(max-width:1000px)");
+
   return (
     <div className="publications-wrapper">
       <h1>Publications and Case Studies</h1>
       <div style={{ margin: "2rem 0" }}>
         <Grid container spacing={4}>
-          <PubCard pub={case_studies[0]} />
-          <PubCard pub={case_studies[1]} />
+          {case_studies.slice(0,2).map((item, index) => {
+            return (
+              <React.Fragment key={index}>
+                {small ? (
+                  <PubCardSmall pub={item} key={item.image} />
+                ) : index % 2 === 0 ? (
+                  <PubCardLarge pub={item} key={item.image} align={true} />
+                ) : (
+                  <PubCardLarge pub={item} key={item.image} />
+                )}
+              </React.Fragment>
+            );
+          })}
         </Grid>
       </div>
       <ButtonSwipe link="/publications">Read more {">"}</ButtonSwipe>
