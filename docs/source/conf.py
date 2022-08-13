@@ -16,8 +16,7 @@ sys.path.insert(0, os.path.abspath('.'))
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_panels',
-                'sphinx_design',
+extensions = [  'sphinx_design',
                 'sphinx.ext.autodoc',
                 'sphinx.ext.napoleon']
 
