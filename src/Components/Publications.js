@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import { case_studies } from "../Constants/case_studies";
+import { publications } from "../Constants/publications";
 import ButtonSwipe from "./ButtonSwipe";
 import { PubCardSmall, PubCardLarge } from "./PubCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -13,7 +13,7 @@ const Publications = () => {
       <h1>Publications and Case Studies</h1>
       <div style={{ margin: "2rem 0" }}>
         <Grid container spacing={4}>
-          {case_studies.slice(0,2).map((item, index) => {
+          {publications.slice(0,2).map((item, index) => {
             return (
               <React.Fragment key={index}>
                 {small ? (

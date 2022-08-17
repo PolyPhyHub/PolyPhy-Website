@@ -10,6 +10,7 @@ import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import PublicationRoute from "./Components/PublicationRoute";
 import News from "./Components/News";
 import TeamRooute from "./Components/TeamRoute";
+import Usecases from "./Components/Usecases";
 
 const darkTheme = createTheme({
   palette: {
@@ -33,6 +34,7 @@ const AppRoutes = () => {
     { path: "/", element: <Home /> },
     { path: "/research", element: <PublicationRoute /> },
     { path: "/team", element: <TeamRooute /> },
+    { path: "/usecases", element: <Usecases /> },
     // ...
   ]);
   return routes;

@@ -49,7 +49,7 @@ const Navlinks = ({ dir, sp, setOpen }) => {
             <a className="dropdown-links" href="/">Creatives</a>
           </li>
           <li>
-            <a className="dropdown-links" href="/">Usecases</a>
+            <a className="dropdown-links" href="/usecases">Usecases</a>
           </li>
         </ul>
       </li>

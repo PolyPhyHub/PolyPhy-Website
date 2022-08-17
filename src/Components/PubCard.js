@@ -1,7 +1,7 @@
-import { Grid, Paper } from "@mui/material";
+import { Grid, Link, Paper } from "@mui/material";
 import React from "react";
 
-export const PubCardSmall = ({ pub }) => {
+export const PubCardSmall = ({ pub, type }) => {
   return (
     <Grid item xs={12} sm={12} md={6}>
       <div className="publication_card_small">
@@ -12,19 +12,34 @@ export const PubCardSmall = ({ pub }) => {
           </p>
           <img src={pub.image} alt=""></img>
           <p className="brief">{pub.brief}</p>
-          <p style={{ padding: "0.5rem 1rem" }}>
-            <i>
-              Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska, Angus G.
-              Forbes
-            </i>
-          </p>
+
+          {type !== "usecase" ? (
+            <p style={{ padding: "0.5rem 1rem" }}>
+              <i>
+                Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska, Angus G.
+                Forbes
+              </i>
+            </p>
+          ) : (
+            <div className="detail-button">
+              <Link
+                href={`https://elek.pub/projects/Rhizome-Cosmology/#${pub.id}`}
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+                color="inherit"
+              >
+                See Details
+              </Link>
+            </div>
+          )}
         </Paper>
       </div>
     </Grid>
   );
 };
 
-export const PubCardLarge = ({ pub, align }) => {
+export const PubCardLarge = ({ pub, align, type }) => {
   return (
     <Grid item xs={12} sm={12}>
       <div className="publication_card_large">
@@ -45,12 +60,26 @@ export const PubCardLarge = ({ pub, align }) => {
                     <i>{pub.journal}</i>
                   </p>
                   <p className="brief">{pub.brief}</p>
-                  <p style={{ padding: "0.5rem 1rem" }}>
-                    <i>
-                      Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska, Angus
-                      G. Forbes
-                    </i>
-                  </p>
+                  {type !== "usecase" ? (
+                    <p style={{ padding: "0.5rem 1rem" }}>
+                      <i>
+                        Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska,
+                        Angus G. Forbes
+                      </i>
+                    </p>
+                  ) : (
+                    <div className="detail-button">
+                      <Link
+                        href={`https://elek.pub/projects/Rhizome-Cosmology/#${pub.id}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        underline="none"
+                        color="inherit"
+                      >
+                        See Details
+                      </Link>
+                    </div>
+                  )}
                 </Grid>
               </>
             ) : (
@@ -61,12 +90,26 @@ export const PubCardLarge = ({ pub, align }) => {
                     <i>{pub.journal}</i>
                   </p>
                   <p className="brief">{pub.brief}</p>
-                  <p style={{ padding: "0.5rem 1rem" }}>
-                    <i>
-                      Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska, Angus
-                      G. Forbes
-                    </i>
-                  </p>
+                  {type !== "usecase" ? (
+                    <p style={{ padding: "0.5rem 1rem" }}>
+                      <i>
+                        Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska,
+                        Angus G. Forbes
+                      </i>
+                    </p>
+                  ) : (
+                    <div className="detail-button">
+                      <Link
+                        href={`https://elek.pub/projects/Rhizome-Cosmology/#${pub.id}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        underline="none"
+                        color="inherit"
+                      >
+                        See Details
+                      </Link>
+                    </div>
+                  )}
                 </Grid>
                 <Grid item xs={6} sm={6}>
                   <div className="image-container">

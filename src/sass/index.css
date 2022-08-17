@@ -251,6 +251,35 @@
   padding: 2rem;
 }
 
+.publication-route-wrapper .detail-button,
+.team-route-wrapper .detail-button {
+  margin: 1rem;
+  margin-top: 0.3rem;
+  padding: 0.3rem 1.5rem;
+  border: 1.5px solid rgba(255, 123, 0, 0.886);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  font-size: 14px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 550px) {
+  .publication-route-wrapper .detail-button,
+  .team-route-wrapper .detail-button {
+    font-size: 12px;
+  }
+}
+
+.publication-route-wrapper .detail-button:hover,
+.team-route-wrapper .detail-button:hover {
+  background-color: rgba(255, 123, 0, 0.886);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 .publication_card_large .image-container {
   display: -webkit-box;
   display: -ms-flexbox;

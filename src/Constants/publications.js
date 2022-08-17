@@ -1,4 +1,4 @@
-export const case_studies = [
+export const publications = [
   
   
   {
