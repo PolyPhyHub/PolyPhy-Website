@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TWITTER_API } from "../constants";
 
 const News = () => {
@@ -13,13 +13,16 @@ const News = () => {
     },
   };
 
-  axios(config)
-    .then(function (response) {
-      setTweets(response.data.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  useEffect(() => {
+    axios(config)
+      .then(function (response) {
+        setTweets(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      // eslint-disable-next-line
+  }, []);
 
   function replaceURLs(message) {
     if (!message) return;

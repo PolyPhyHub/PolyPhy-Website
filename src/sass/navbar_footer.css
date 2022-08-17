@@ -77,6 +77,19 @@ a {
   background: #ff8000;
 }
 
+.navbar .dropdown-links {
+  color: #e6e6e6;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar .dropdown-links {
+    font-size: 12px;
+  }
+}
+
 .navbar .dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,10 +101,15 @@ a {
           flex-direction: column;
   background-color: #323232af;
   position: absolute;
-  width: 140%;
   left: -20%;
   z-index: 999;
   padding: 0.5rem 0.7rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar .dropdown {
+    background-color: #323232;
+  }
 }
 
 .navbar .dropdown li {

@@ -31,7 +31,7 @@ const Home = () => {
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/publications", element: <PublicationRoute /> },
+    { path: "/research", element: <PublicationRoute /> },
     { path: "/team", element: <TeamRooute /> },
     // ...
   ]);

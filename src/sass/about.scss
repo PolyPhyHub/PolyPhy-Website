@@ -219,8 +219,36 @@
     }
 
     svg:hover,
-  path:hover {
-    color: rgb(255, 166, 0) !important;
+    path:hover {
+      color: rgb(255, 166, 0) !important;
+    }
   }
+}
+
+.github-contributor-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.github-contributor {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-left: 0.2px solid $theme-amber;
+  border-right: 0.2px solid $theme-amber;
+  width: fit-content;
+  margin: 10px 0;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    background-color: grey;
+    @media #{$media-mobile} {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

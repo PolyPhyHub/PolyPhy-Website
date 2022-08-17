@@ -37,37 +37,38 @@ const Navlinks = ({ dir, sp, setOpen }) => {
           Documentation
         </a>
       </li>
-      <li>
-        <a className="navLinksMain" href="/publications">
-          Publications
-        </a>
-      </li>
-      {/* <li>
-        <a
-         className="navLinksMain"
-          href="https://cross-polyphy-docs.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Contribution
-        </a>
-      </li> */}
       <li className="dropdown-wrapper">
-        <a className="navLinksMain" href="/">
-          Community
-        </a>
+        <p className="navLinksMain">
+          Gallery
+        </p>
         <ul className="dropdown">
           <li>
-            <a href="/">GitHub</a>
+            <a className="dropdown-links" href="/research">Research</a>
           </li>
           <li>
-            <a href="/">Slack </a>
+            <a className="dropdown-links" href="/">Creatives</a>
           </li>
           <li>
-            <a href="/">Discussions</a>
+            <a className="dropdown-links" href="/">Usecases</a>
+          </li>
+        </ul>
+      </li>
+      <li className="dropdown-wrapper">
+        <p className="navLinksMain">
+          Community
+        </p>
+        <ul className="dropdown">
+          <li>
+            <a className="dropdown-links" href="/">GitHub</a>
           </li>
           <li>
-            <a href="/team">Team</a>
+            <a className="dropdown-links" href="/">Slack </a>
+          </li>
+          <li>
+            <a className="dropdown-links" href="/">Discussions</a>
+          </li>
+          <li>
+            <a className="dropdown-links" href="/team">Team</a>
           </li>
         </ul>
       </li>

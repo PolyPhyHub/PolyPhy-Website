@@ -9,7 +9,7 @@ const PublicationRoute = () => {
 
   return (
     <div className="publication-route-wrapper">
-      <h1>Publications and Case Studies</h1>
+      <h1>Research and Publications</h1>
       <div style={{ margin: "2rem 0" }}>
         <Grid container spacing={4}>
           {case_studies.map((item, index) => {
