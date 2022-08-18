@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import { PubCardLarge, PubCardSmall } from "./PubCard";
 import React from "react";
 import { publications } from "../Constants/publications";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import {useMediaQuery} from "@mui/material";
 
 const PublicationRoute = () => {
   const small = useMediaQuery("(max-width:1000px)");

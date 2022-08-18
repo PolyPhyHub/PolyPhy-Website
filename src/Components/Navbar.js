@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import React, { useState } from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import {useMediaQuery} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
@@ -46,7 +46,7 @@ const Navlinks = ({ dir, sp, setOpen }) => {
             <a className="dropdown-links" href="/research">Research</a>
           </li>
           <li>
-            <a className="dropdown-links" href="/">Creatives</a>
+            <a className="dropdown-links" href="/creatives">Creative</a>
           </li>
           <li>
             <a className="dropdown-links" href="/usecases">Usecases</a>

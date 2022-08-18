@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import { PubCardLarge, PubCardSmall } from "./PubCard";
 import React from "react";
 import { usecases } from "../Constants/usecases";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import {useMediaQuery} from "@mui/material";
 
 const Usecases = () => {
   const small = useMediaQuery("(max-width:1000px)");

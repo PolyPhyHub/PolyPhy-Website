@@ -11,7 +11,7 @@ const Hero = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={6}>
             <div className="content">
-              <h1>POLYPHORM</h1>
+              <h1>POLYPHY</h1>
               <div className="heading-underline"></div>
               <p>
                 Structural Analysis of Cosmological Datasets via Interactive

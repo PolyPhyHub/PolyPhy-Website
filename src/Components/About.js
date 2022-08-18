@@ -4,7 +4,7 @@ import ButtonSwipe from "./ButtonSwipe";
 const About = () => {
   return (
     <div id="about" className="about">
-      <h1>About Polyphorm</h1>
+      <h1>About Polyphy</h1>
       <br />
       <p>
         Polyphorm, an interactive visualization and model fitting tool that

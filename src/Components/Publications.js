@@ -3,7 +3,7 @@ import React from "react";
 import { publications } from "../Constants/publications";
 import ButtonSwipe from "./ButtonSwipe";
 import { PubCardSmall, PubCardLarge } from "./PubCard";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import {useMediaQuery} from "@mui/material";
 
 const Publications = () => {
   const small = useMediaQuery("(max-width:1000px)");
