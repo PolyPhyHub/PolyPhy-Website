@@ -36,6 +36,15 @@ p {
   }
 }
 
+i {
+  line-height: 1rem;
+  color: $text-color;
+  font-size: 12px;
+  @media #{$media-mobile} {
+    font-size: 10px;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;

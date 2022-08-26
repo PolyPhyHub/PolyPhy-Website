@@ -29,7 +29,7 @@
   z-index: 1000;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 756px) {
   .hero .content {
     margin-left: 0;
     margin-right: auto;
@@ -110,7 +110,7 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 756px) {
   .cta-arrow-wrapper {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);

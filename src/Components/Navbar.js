@@ -23,8 +23,8 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         </a>
       </li>
       <li>
-        <a className="navLinksMain" href="/">
-          About
+        <a className="navLinksMain" href="/story">
+          Story
         </a>
       </li>
       <li>

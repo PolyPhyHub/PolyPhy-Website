@@ -20,7 +20,7 @@ a {
   background-color: #000000e5;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 756px) {
   .navbar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -160,7 +160,7 @@ a {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 756px) {
   .footer-wrapper h1 {
     text-align: left;
     -webkit-transform: translateY(-30px);

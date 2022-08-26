@@ -12,6 +12,7 @@ import News from "./Components/News";
 import TeamRooute from "./Components/TeamRoute";
 import Usecases from "./Components/Usecases";
 import Creatives from "./Components/Creatives";
+import Story from "./Components/Story";
 
 const darkTheme = createTheme({
   palette: {
@@ -37,6 +38,7 @@ const AppRoutes = () => {
     { path: "/team", element: <TeamRooute /> },
     { path: "/usecases", element: <Usecases /> },
     { path: "/creatives", element: <Creatives /> },
+    { path: "/story", element: <Story /> },
     // ...
   ]);
   return routes;
