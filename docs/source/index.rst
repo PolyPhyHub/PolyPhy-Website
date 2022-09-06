@@ -12,8 +12,11 @@ PolyPhy
     
     .. grid-item-card::
 
-        **PolyPhy** aims to be a multi-platform toolkit that can be used across various domains, primarily
-        astronomy and data science.
+        **PolyPhy** is an interactive visualization tool to analyze intergalactic gas and dark matter filaments (together known as 'Cosmic web') 
+        using the `Monte Carlo Physarum Machine (MCPM) <https://arxiv.org/pdf/2204.01256.pdf>`_ algorithm inspired by the foraging
+        behavior of `Physarum polycephalum <https://en.wikipedia.org/wiki/Physarum_polycephalum>`_ 'slime mold'.
+
+       
 
     .. grid-item-card::
 
@@ -24,7 +27,7 @@ PolyPhy
 
         +++
 
-        .. button-ref:: getting_started
+        .. button-ref:: getting_started/index
             :expand:
             :color: warning
             :click-parent:
@@ -37,11 +40,11 @@ PolyPhy
         **Tutorials**
         ^^^^^^^^^^
 
-        Tutorials provides in-depth information on the key concepts of PolyPhy with useful background information and explanation. 
+        Tutorials provide in-depth information on the core concepts of PolyPhy with convenient background information and explanation. 
 
         +++
 
-        .. button-ref:: tutorials
+        .. button-ref:: tutorials/index
             :expand:
             :color: warning
             :click-parent:
@@ -53,22 +56,22 @@ PolyPhy
         **How-To**
         ^^^^^^^^^^^^^
 
-        Practical step-by-step guides for the more experienced developer, covering several important topics. They guide you through the steps involved in addressing key problems and use-cases
+        Practical step-by-step guides for the more experienced developer, covering several important topics. They guide you through the steps involved in addressing crucial problems and use cases.
 
         +++
 
-        .. button-ref:: how_to
+        .. button-ref:: how_to/index
             :expand:
             :color: warning
             :click-parent:
 
-            To the How To
+            To the How-To
 
     .. grid-item-card::
 
         **API Reference**
         ^^^^^^^^^^^^^^^
-        This reference guide contails a detailed description of the functions, classes, objects, and modules used in PolyPhy. It describes how the methods work and which parameters can be used.
+        This reference guide contains a comprehensive description of the PolyPhy API. The reference describes how the methods work and which parameters can be used. It assumes that you have an understanding of the key concepts. 
         
 
         +++
@@ -82,8 +85,8 @@ PolyPhy
 
     .. grid-item-card::
 
-        **Contributor's Guide**
-        ^^^^^^^^^^^^^^^
+        **Developer Guide**
+        ^^^^^^^^^^^^^^^^^^^
 
         Want to improve existing functionalities? Saw typo in the documentation? The contributing guidelines will guide you through the process of improving PolyPhy.
 
@@ -94,7 +97,7 @@ PolyPhy
             :color: warning
             :click-parent:
 
-            To the Contributor documentation
+            To the development guide
          
 
 
@@ -102,9 +105,9 @@ PolyPhy
    :maxdepth: 1
    :hidden:
 
-   getting_started
-   tutorials
-   how_to
+   getting_started/index
+   tutorials/index
+   how_to/index
    contribution/index
    api_docs
    
