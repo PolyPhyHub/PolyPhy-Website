@@ -1,11 +1,11 @@
 Troubleshooting
 ################
 
-Following steps can be considered(in no specific order) :
+Following steps can be considered while troubleshooting(in no specific order) :
 
 1. Make sure to fetch all the tags from the upstream repository. The command ``git describe --abbrev=0 --tags`` should
 return the version you are expecting. If you are trying to run CI scripts in a fork repository, make sure to push all the tags. 
-You can also try to remove all the egg files or the complete egg folder, i.e., ``.eggs``, as well as the ``*.egg-info`` folders 
+You can also try to remove all the ``egg files`` or the complete ``egg folder``, i.e., ``.eggs``, as well as the ``*.egg-info`` folders 
 in the src folder or potentially in the root of your project.
 
 
