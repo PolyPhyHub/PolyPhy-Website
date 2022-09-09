@@ -1,4 +1,4 @@
-Release Guide
+Release guide
 ##############
 
 If you are part of the group of maintainers and have correct user permissions on `PyPI <https://pypi.org/>`_, the following steps 

@@ -102,12 +102,11 @@ PolyPhy
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :hidden:
 
    getting_started/index
    tutorials/index
    how_to/index
    contribution/index
-   api_docs
-   
+   api_docs 

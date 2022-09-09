@@ -4,5 +4,5 @@ Testing
 Running tests locally
 ----------------------
 
-Continuous Integration
+Continuous integration
 -----------------------

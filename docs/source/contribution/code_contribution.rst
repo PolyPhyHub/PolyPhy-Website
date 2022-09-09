@@ -42,6 +42,7 @@ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_::
     conda activate polyphy
 
 Additionally, you can use `Tox <https://pypi.org/project/tox/3.1.2/>`_ to manage your virtual environment.
+Tox is a generic virtualenv management and test command line tool.
 
 Make sure to install tox in the root of your project. ::
 
@@ -59,14 +60,14 @@ Making a pull request
 To submit pull requests, just head over to the PolyPhy repository on GitHub and click the “fork” button. After that, you need to clone the repository you forked using your favorite git client or git CLI.
 
 
-Creating a Fork
+Creating a fork
 ******************
 
 Clone your fork to your local machine::
 
     git clone git@github.com:USERNAME/FORKED-PROJECT.git
 
-Keeping Your Fork Up to Date
+Keeping your fork up to date
 ********************************
 
 Add 'upstream' repo to list of remotes::
@@ -90,7 +91,7 @@ Checkout your master branch and merge upstream::
     git checkout master
     git merge upstream/master
 
-Creating a Branch
+Creating a branch
 **********************
 
 Checkout the master branch - you want your new branch to come from master::
@@ -107,7 +108,7 @@ Switch to your new branch::
 
 Now, you can make desired changes.
 
-Submitting a Pull Request
+Submitting a pull request
 ******************************
 
 Fetch upstream master and merge with your repo's master branch::

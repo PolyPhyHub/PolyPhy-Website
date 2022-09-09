@@ -1,15 +1,9 @@
 Troubleshooting
 ################
 
-Following steps can be considered while troubleshooting(in no specific order) :
+The following steps can be considered if you use tox and run into dependencies missing, virtual environment, or testing issues (in no specific order):
 
-1. Make sure to fetch all the tags from the upstream repository. The command ``git describe --abbrev=0 --tags`` should
-return the version you are expecting. If you are trying to run CI scripts in a fork repository, make sure to push all the tags. 
-You can also try to remove all the ``egg files`` or the complete ``egg folder``, i.e., ``.eggs``, as well as the ``*.egg-info`` folders 
-in the src folder or potentially in the root of your project.
-
-
-2.  Sometimes tox misses out when new dependencies are added, especially to ``setup.cfg`` and ``docs/requirements.txt``. If you find any
+1.  Sometimes tox misses out when new dependencies are added, especially to ``setup.cfg`` and ``docs/requirements.txt``. If you find any
 problems with missing dependencies when running a command with tox, try to recreate the tox environment using the ``-r`` flag. 
 For example, instead of: ::
 
@@ -20,7 +14,7 @@ Try running: ::
     tox -r -e docs
 
 
-3. Make sure to have a reliable tox installation that uses the correct Python version (e.g., 3.7+). 
+2. Make sure to have a reliable tox installation that uses the correct Python version (e.g., 3.7+). 
 When in doubt you can run: ::
 
     tox --version
@@ -34,7 +28,7 @@ Additionally, you can also try to create a dedicated virtual environment with a 
     .venv/bin/pip install tox
     .venv/bin/tox -e all
 
-4. Pytest can drop you in an interactive session in the case an error occurs. In order to do that you need to pass a 
+3. Pytest can drop you in an interactive session in the case an error occurs. In order to do that you need to pass a 
 ``--pdb option`` (for example by running ``tox -- -k <NAME OF THE FALLING TEST> --pdb``). You can also setup breakpoints manually instead of 
 using the ``--pdb`` option.
 
