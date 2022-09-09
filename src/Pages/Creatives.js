@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { creatives } from "../Constants/creatives";
-import CreativeCard from "./CreativeCard";
+import CreativeCard from "../Components/CreativeCard";
 
 const Creatives = () => {
   // const images = [

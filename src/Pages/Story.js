@@ -151,7 +151,7 @@ const Story = () => {
           </Grid>
         </div>
       </div>
-      <div style={{ maxWidth: "1300px", margin: "auto", paddingBottom: "2rem" }}>
+      <div style={{ maxWidth: "1300px", margin: "auto"}}>
         <div style={{ margin: "2rem 0" }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} md={8}>
@@ -193,7 +193,7 @@ const Story = () => {
           </Grid>
         </div>
       </div>
-      <div style={{ maxWidth: "1300px", margin: "2rem auto" }}>
+      <div style={{ maxWidth: "1300px", margin: "4rem auto" }}>
         <h2 style={{ textAlign: "center" }}>Key features of the model</h2>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={12} md={6}>
@@ -253,7 +253,7 @@ const Story = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
-            <div className="section2">
+            <div className="section4" style={{backgroundColor: "rgba(232, 117, 2, 0.401)", border: "none"}}>
               <h2>Self-patterning</h2>
               <p>
                 Even without structured input data, MCPM remains true to its

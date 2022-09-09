@@ -399,3 +399,30 @@
     }
   }
 }
+
+.errorpage {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+
+  h3 {
+    font-size: 80px;
+    line-height: 120px;
+    @media #{$media-tablet} {
+      font-size: 40px;
+    line-height: 60px;
+    }
+  }
+
+  h4 {
+    font-weight: lighter;
+    font-size: 30px;
+    @media #{$media-tablet} {
+      font-size: 15px;
+    }
+  }
+}

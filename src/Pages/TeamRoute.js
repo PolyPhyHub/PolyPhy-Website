@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { sig_contri, team } from "../Constants/team";
-import TeamCard from "./TeamCard";
+import TeamCard from "../Components/TeamCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -45,10 +45,10 @@ const TeamRooute = () => {
             <div className="sig-contri" key={x.name}>
               <p>{x.name}</p>
               <div style={{ display: "flex" }}>
-                <a href="/">
+                <a href={process.env.PUBLIC_URL+"/"}>
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="/">
+                <a href={process.env.PUBLIC_URL+"/"}>
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </div>

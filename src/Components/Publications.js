@@ -30,7 +30,7 @@ const Publications = () => {
           })}
         </Grid>
       </div>
-      <ButtonSwipe link="/publications">Read more {">"}</ButtonSwipe>
+      <ButtonSwipe link={process.env.PUBLIC_URL+"/research"}>Read more {">"}</ButtonSwipe>
     </div>
   );
 };

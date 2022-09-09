@@ -1,13 +1,11 @@
 import React from "react";
 import { Grid, Link } from "@mui/material";
-import video from "./hero-video.webm";
+import video from "../Assets/hero-video.webm";
 
 const Hero = () => {
   return (
     <>
       <div className="hero">
-        {/* <div className="stars"></div>
-        <div className="twinkling"></div> */}
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={6}>
             <div className="content">
@@ -23,7 +21,7 @@ const Hero = () => {
                 the Monte Carlo Physarum Machine (MCPM) algorithm inspired by
                 the foraging behavior of Physarum polycephalum 'slime mold'.
               </p>
-              <a href="/">Get Started !</a>
+              <a href={process.env.PUBLIC_URL+"#about"}>Get Started !</a>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
@@ -48,7 +46,7 @@ const Hero = () => {
       </div>
 
       <div className="cta-arrow-wrapper">
-        <Link href="#about" underline="none">
+        <Link href={process.env.PUBLIC_URL+"#about"} underline="none">
           <div className="cta-arrow"></div>
         </Link>
       </div>

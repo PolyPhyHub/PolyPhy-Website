@@ -1,6 +1,7 @@
 {
   "name": "cross-polyform",
   "version": "0.1.0",
+  "homepage": "https://hyperspaceweb.net/polyphy/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",

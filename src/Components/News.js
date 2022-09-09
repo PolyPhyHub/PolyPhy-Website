@@ -7,7 +7,8 @@ const News = () => {
 
   var config = {
     method: "get",
-    url: "https://thingproxy.freeboard.io/fetch/https://api.twitter.com/2/users/1204853272583892992/tweets?exclude=replies&tweet.fields=created_at",
+    // url: "https://thingproxy.freeboard.io/fetch/https://api.twitter.com/2/users/1204853272583892992/tweets?exclude=replies&tweet.fields=created_at",
+    url: "https://api.twitter.com/2/users/1204853272583892992/tweets?exclude=replies&tweet.fields=created_at",
     headers: {
       Authorization: TWITTER_API,
     },

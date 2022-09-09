@@ -15,10 +15,7 @@ export const PubCardSmall = ({ pub, type }) => {
 
           {type !== "usecase" ? (
             <p style={{ padding: "0.5rem 1rem" }}>
-              <i>
-                Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska, Angus G.
-                Forbes
-              </i>
+              <i>{pub.authors}</i>
             </p>
           ) : (
             <div className="detail-button">
@@ -62,10 +59,7 @@ export const PubCardLarge = ({ pub, align, type }) => {
                   <p className="brief">{pub.brief}</p>
                   {type !== "usecase" ? (
                     <p style={{ padding: "0.5rem 1rem" }}>
-                      <i>
-                        Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska,
-                        Angus G. Forbes
-                      </i>
+                      <i>{pub.authors}</i>
                     </p>
                   ) : (
                     <div className="detail-button">
@@ -92,10 +86,7 @@ export const PubCardLarge = ({ pub, align, type }) => {
                   <p className="brief">{pub.brief}</p>
                   {type !== "usecase" ? (
                     <p style={{ padding: "0.5rem 1rem" }}>
-                      <i>
-                        Oskar Elek, Joseph N. Burchett, J. Xavier Prochaska,
-                        Angus G. Forbes
-                      </i>
+                      <i>{pub.authors}</i>
                     </p>
                   ) : (
                     <div className="detail-button">

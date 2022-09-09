@@ -47,7 +47,7 @@ const About = () => {
         the input points are contained in it) as well as the plausibility of the
         obtained filamentary structures.
       </p>
-      <Link href="/story" underline="none">
+      <Link href={process.env.PUBLIC_URL+"/story"} underline="none">
         <ButtonSwipe>Know More!</ButtonSwipe>
       </Link>
     </div>

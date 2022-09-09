@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import React, { useState } from "react";
-import {useMediaQuery} from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
@@ -11,26 +11,25 @@ const Navlinks = ({ dir, sp, setOpen }) => {
   const mobile = useMediaQuery("(max-width:768px)");
 
   return (
-    <Stack direction={dir} spacing={sp}>
-      {mobile ? (
-        <IconButton onClick={() => setOpen(false)}>
-          <CloseIcon />
-        </IconButton>
-      ) : null}
+    <Stack
+      direction={dir}
+      spacing={sp}
+      alignItems={!mobile ? "center" : "left"}
+    >
       <li>
-        <a className="navLinksMain" href="/">
+        <a className="navLinksMain" href={process.env.PUBLIC_URL+"/"}>
           Home
         </a>
       </li>
       <li>
-        <a className="navLinksMain" href="/story">
+        <a className="navLinksMain" href={process.env.PUBLIC_URL+"/story"}>
           Story
         </a>
       </li>
       <li>
         <a
           className="navLinksMain"
-          href="https://cross-polyphy-docs.vercel.app/"
+          href={process.env.PUBLIC_URL+"/"}
           target="_blank"
           rel="noreferrer"
         >
@@ -38,37 +37,47 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         </a>
       </li>
       <li className="dropdown-wrapper">
-        <p className="navLinksMain">
-          Gallery
-        </p>
+        <p className="navLinksMain">Gallery</p>
         <ul className="dropdown">
           <li>
-            <a className="dropdown-links" href="/research">Research</a>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/research"}>
+              Research
+            </a>
           </li>
           <li>
-            <a className="dropdown-links" href="/creatives">Creative</a>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/creatives"}>
+              Creative
+            </a>
           </li>
           <li>
-            <a className="dropdown-links" href="/usecases">Usecases</a>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/usecases"}>
+              Usecases
+            </a>
           </li>
         </ul>
       </li>
       <li className="dropdown-wrapper">
-        <p className="navLinksMain">
-          Community
-        </p>
+        <p className="navLinksMain">Community</p>
         <ul className="dropdown">
           <li>
-            <a className="dropdown-links" href="/">GitHub</a>
+            <a className="dropdown-links" href="https://github.com/PolyPhyHub">
+              GitHub
+            </a>
           </li>
           <li>
-            <a className="dropdown-links" href="/">Slack </a>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/"}>
+              Slack{" "}
+            </a>
           </li>
           <li>
-            <a className="dropdown-links" href="/">Discussions</a>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/"}>
+              Discussions
+            </a>
           </li>
           <li>
-            <a className="dropdown-links" href="/team">Team</a>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/team"}>
+              Team
+            </a>
           </li>
         </ul>
       </li>
@@ -84,9 +93,13 @@ const Navbar = () => {
     <div className="navbar">
       {!mobile ? (
         <Navlinks dir="row" sp={10} />
-      ) : (
+      ) : !open ? (
         <IconButton onClick={() => setOpen(true)}>
           <MenuIcon />
+        </IconButton>
+      ) : (
+        <IconButton onClick={() => setOpen(false)}>
+          <CloseIcon />
         </IconButton>
       )}
       <Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
@@ -96,6 +109,7 @@ const Navbar = () => {
             width: "100%",
             height: "100vh",
             backgroundColor: "black",
+            marginTop: mobile ? "3rem" : "0",
           }}
         >
           <div className="navbar">

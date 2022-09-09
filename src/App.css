@@ -93,12 +93,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .stars {
   background: #000
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    url(./Assets/stars.png) repeat top
     center;
   z-index: 0;
 }
 
-.twinkling {
+/* .twinkling {
   background: transparent
     url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
     top center;
@@ -108,10 +108,10 @@ body::-webkit-scrollbar-thumb:hover {
   -o-animation: move-twink-back 200s linear infinite;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
-}
+} */
 
 .App {
   background: #000
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    url(./Assets/stars.png) repeat top
     center;
 }
