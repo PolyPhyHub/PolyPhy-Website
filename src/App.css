@@ -32,20 +32,6 @@ body::-webkit-scrollbar-thumb:hover {
   background: #cc5f00;
 }
 
-.hero {
-  min-height: calc(100vh - 6rem);
-}
-
-#tsparticles {
-  height: calc(100vh - 6rem);
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
-}
-
 @keyframes move-twink-back {
   from {
     background-position: 0 0;

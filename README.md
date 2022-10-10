@@ -3,7 +3,7 @@
 ## Overview
 
 ### About
-This is the documentation for the official website of Polyphy. It gives a brief overview of the what the website encompasses and the technical concepts behind the same. Polyphorm is an interactive tool to analyze intergalactic gas and dark matter filaments (together known as 'Cosmic web') using the Monte Carlo Physarum Machine (MCPM) algorithm inspired by the foraging behavior of Physarum polycephalum 'slime mold'.
+This is the documentation for the official website of Polyphy. It gives a brief overview of the what the website encompasses and the technical concepts behind the same. Polyphy is an interactive tool to analyze intergalactic gas and dark matter filaments (together known as 'Cosmic web') using the Monte Carlo Physarum Machine (MCPM) algorithm inspired by the foraging behavior of Physarum polycephalum 'slime mold'.
 
 ### Target Audience
 This website mainly caters to 3 types of users: 

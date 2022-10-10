@@ -29,7 +29,7 @@ const Story = () => {
                 Rhizome Cosmology is made by , an open-source software that
                 combines an interactive implementation of a 3D Physarum machine,
                 and a simultaneous volume visualization of the generated
-                structures. Polyphorm has enabled novel scientific results
+                structures. Polyphy has enabled novel scientific results
                 through its ability to create detailed 3D density maps of the
                 Cosmic web from sparse cosmological data – catalogues of
                 galaxies and/or dark matter halos. Our main findings include the

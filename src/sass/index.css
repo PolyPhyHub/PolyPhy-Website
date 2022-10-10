@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  min-height: calc(100vh - 6rem);
   padding: 4rem 2rem;
   max-width: 1500px;
   margin: auto;
@@ -102,8 +101,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1000;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
+  height: 250px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -112,8 +110,7 @@
 
 @media only screen and (max-width: 756px) {
   .cta-arrow-wrapper {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    height: 100px;
   }
 }
 
