@@ -70,7 +70,7 @@ const Navlinks = ({ dir, sp, setOpen }) => {
             </a>
           </li>
           <li>
-            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/"}>
+            <a className="dropdown-links" href="https://github.com/PolyPhyHub/PolyPhy/issues">
               Discussions
             </a>
           </li>
