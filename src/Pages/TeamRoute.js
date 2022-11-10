@@ -68,6 +68,7 @@ const TeamRooute = () => {
       </div>
       <div style={{ margin: "4rem auto 2rem auto", maxWidth: "1200px" }}>
         <h2>GitHub Contributors</h2>
+        <p style={{textAlign: "center"}}>PolyPhy Project Repository</p>
         <div className="github-contributor-wrapper">
           {list1?.map((x) => {
             return (
@@ -80,6 +81,9 @@ const TeamRooute = () => {
               </a> : null
             );
           }).reverse()}
+          </div>
+          <p style={{textAlign: "center"}}>PolyPhy Website Repository</p>
+          <div className="github-contributor-wrapper">
           {list2?.map((x) => {
             return (
               x.contributions >= 3 ?

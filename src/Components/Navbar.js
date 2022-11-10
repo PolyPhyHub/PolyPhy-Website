@@ -65,6 +65,11 @@ const Navlinks = ({ dir, sp, setOpen }) => {
             </a>
           </li>
           <li>
+            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/opportunities"}>
+              Opportunities{" "}
+            </a>
+          </li>
+          <li>
             <a className="dropdown-links" href={process.env.PUBLIC_URL+"/"}>
               Slack{" "}
             </a>
