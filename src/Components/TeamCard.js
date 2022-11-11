@@ -13,13 +13,13 @@ const TeamCard = ({ x }) => {
           <h3>{x.name}</h3>
           <p>{x.about}</p>
           <Grid container>
-            <a href="/">
+            <a href={process.env.PUBLIC_URL+"/"}>
               <FontAwesomeIcon icon={faCode} />
             </a>
-            <a href="/">
+            <a href={process.env.PUBLIC_URL+"/"}>
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="/">
+            <a href={process.env.PUBLIC_URL+"/"}>
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </Grid>

@@ -1,15 +1,16 @@
 import "./App.css";
 import "./sass/index.css";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Publications from "./Components/Publications";
-import { BrowserRouter as Router, useRoutes } from "react-router-dom";
-import PublicationRoute from "./Components/PublicationRoute";
-import News from "./Components/News";
-import TeamRooute from "./Components/TeamRoute";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import PublicationRoute from "./Pages/PublicationRoute";
+import TeamRooute from "./Pages/TeamRoute";
+import Usecases from "./Pages/Usecases";
+import Creatives from "./Pages/Creatives";
+import Story from "./Pages/Story";
+import Home from "./Pages/Home";
+import ErrorPage from "./Pages/ErrorPage";
 
 const darkTheme = createTheme({
   palette: {
@@ -17,30 +18,24 @@ const darkTheme = createTheme({
   },
 });
 
-const Home = () => {
-  return (
-    <div className="Home">
-      <Hero />
-      <News />
-      <About />
-      <Publications />
-    </div>
-  );
-};
-
 const AppRoutes = () => {
   let routes = useRoutes([
-    { path: "/", element: <Home /> },
-    { path: "/publications", element: <PublicationRoute /> },
-    { path: "/team", element: <TeamRooute /> },
+    { path: process.env.PUBLIC_URL+"/", element: <Home /> },
+    { path: process.env.PUBLIC_URL+"/research", element: <PublicationRoute /> },
+    { path: process.env.PUBLIC_URL+"/team", element: <TeamRooute /> },
+    { path: process.env.PUBLIC_URL+"/usecases", element: <Usecases /> },
+    { path: process.env.PUBLIC_URL+"/creatives", element: <Creatives /> },
+    { path: process.env.PUBLIC_URL+"/story", element: <Story /> },
+    { path: "*", element: <ErrorPage /> },
     // ...
   ]);
   return routes;
 };
 
 function App() {
+  console.log(process.env.PUBLIC_URL)
   return (
-    <Router>
+    <BrowserRouter>
       <ThemeProvider theme={darkTheme}>
         <Navbar />
         <div className="App">
@@ -48,7 +43,7 @@ function App() {
         </div>
         <Footer />
       </ThemeProvider>
-    </Router>
+    </BrowserRouter>
   );
 }
 

@@ -1,18 +1,18 @@
 import { Grid } from "@mui/material";
-import { PubCardLarge, PubCardSmall } from "./PubCard";
+import { PubCardLarge, PubCardSmall } from "../Components/PubCard";
 import React from "react";
-import { case_studies } from "../Constants/case_studies";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { publications } from "../Constants/publications";
+import {useMediaQuery} from "@mui/material";
 
 const PublicationRoute = () => {
   const small = useMediaQuery("(max-width:1000px)");
 
   return (
     <div className="publication-route-wrapper">
-      <h1>Publications and Case Studies</h1>
+      <h1>Research and Publications</h1>
       <div style={{ margin: "2rem 0" }}>
         <Grid container spacing={4}>
-          {case_studies.map((item, index) => {
+          {publications.map((item, index) => {
             return (
               <React.Fragment key={index}>
                 {small ? (

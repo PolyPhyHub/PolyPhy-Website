@@ -56,16 +56,29 @@ a {
     background: #ff8000;
   }
 
+  .dropdown-links {
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    @media #{$media-mobile} {
+      font-size: 12px;
+    }
+  }
+
   .dropdown {
     display: flex;
     visibility: hidden;
     flex-direction: column;
     background-color: #323232af;
     position: absolute;
-    width: 140%;
     left: -20%;
     z-index: 999;
     padding: 0.5rem 0.7rem;
+
+    @media #{$media-mobile} {
+      background-color: #323232;
+    }
 
     li {
       list-style: none;
