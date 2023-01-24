@@ -29,7 +29,7 @@ const Navlinks = ({ dir, sp, setOpen }) => {
       <li>
         <a
           className="navLinksMain"
-          href={process.env.PUBLIC_URL+"/"}
+          href={"https://polyphy.readthedocs.io/"}
           target="_blank"
           rel="noreferrer"
         >

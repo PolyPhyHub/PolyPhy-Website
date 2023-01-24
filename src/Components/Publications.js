@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Box, CircularProgress } from "@mui/material";
 import React from "react";
 // import { publications } from "../Constants/publications";
 import ButtonSwipe from "./ButtonSwipe";
@@ -33,24 +33,40 @@ const Publications = () => {
       <h1>Publications and Case Studies</h1>
       <div style={{ margin: "2rem 0" }}>
         <Grid container spacing={4}>
-          {publicationArray.map((item, index) => {
-            return (
-              <React.Fragment key={index}>
-                {item.homepage === "TRUE" ? (
-                  small ? (
-                    <PubCardSmall pub={item} key={item.image} />
-                  ) : index % 2 === 0 ? (
-                    <PubCardLarge pub={item} key={item.image} align={true} />
-                  ) : (
-                    <PubCardLarge pub={item} key={item.image} />
-                  )
-                ) : null}
-              </React.Fragment>
-            );
-          })}
+          {publicationArray.length > 0 ? (
+            publicationArray.map((item, index) => {
+              return (
+                <React.Fragment key={index}>
+                  {item.homepage === "TRUE" ? (
+                    small ? (
+                      <PubCardSmall pub={item} key={item.image} />
+                    ) : index % 2 === 0 ? (
+                      <PubCardLarge pub={item} key={item.image} align={true} />
+                    ) : (
+                      <PubCardLarge pub={item} key={item.image} />
+                    )
+                  ) : null}
+                </React.Fragment>
+              );
+            })
+          ) : (
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+                marginTop: "4rem",
+                marginBottom: "2rem"
+              }}
+            >
+              <CircularProgress />
+            </Box>
+          )}
         </Grid>
       </div>
-      <ButtonSwipe link={process.env.PUBLIC_URL+"/research"}>Read more {">"}</ButtonSwipe>
+      <ButtonSwipe link={process.env.PUBLIC_URL + "/research"}>
+        Read more {">"}
+      </ButtonSwipe>
     </div>
   );
 };

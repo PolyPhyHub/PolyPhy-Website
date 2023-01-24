@@ -3,7 +3,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Grid } from "@mui/material";
+import { Grid, Box, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 
@@ -31,21 +31,37 @@ const Opportunities = () => {
       <h1>Opportunities</h1>
       <div className="opportunities-content">
         <Grid container spacing={4}>
-          {opportunityArray.map((x) => {
-            return (
-              <Grid item xs={12} sm={6}>
-                <Accordion>
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <h3>{x.title}</h3>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <p>{x.description}</p>
-                    <p><a href="/"> I'm interested! </a></p>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-            );
-          })}
+          {opportunityArray.length > 0 ? (
+            opportunityArray.map((x, y) => {
+              return (
+                <Grid item xs={12} sm={12} md={6} key={y}>
+                  <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <h3>{x.title}</h3>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <p>{x.description}</p>
+                      <p style={{ textAlign: "right" }}>
+                        <a href={x.link}> I'm interested! </a>
+                      </p>
+                    </AccordionDetails>
+                  </Accordion>
+                </Grid>
+              );
+            })
+          ) : (
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+                marginTop: "4rem",
+                marginBottom: "2rem",
+              }}
+            >
+              <CircularProgress />
+            </Box>
+          )}
         </Grid>
       </div>
     </div>

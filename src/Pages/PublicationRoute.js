@@ -1,8 +1,8 @@
-import { Grid } from "@mui/material";
+import { CircularProgress, Grid, Box } from "@mui/material";
 import { PubCardLarge, PubCardSmall } from "../Components/PubCard";
 import React from "react";
 // import { publications } from "../Constants/publications";
-import {useMediaQuery} from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 
@@ -32,19 +32,25 @@ const PublicationRoute = () => {
       <h1>Research and Publications</h1>
       <div style={{ margin: "2rem 0", minHeight: "100vh" }}>
         <Grid container spacing={4}>
-          {publicationArray.map((item, index) => {
-            return (
-              <React.Fragment key={index}>
-                {small ? (
-                  <PubCardSmall pub={item} key={item.image} />
-                ) : index % 2 === 0 ? (
-                  <PubCardLarge pub={item} key={item.image} align={true} />
-                ) : (
-                  <PubCardLarge pub={item} key={item.image} />
-                )}
-              </React.Fragment>
-            );
-          })}
+          {publicationArray.length > 0 ? (
+            publicationArray.map((item, index) => {
+              return (
+                <React.Fragment key={index}>
+                  {small ? (
+                    <PubCardSmall pub={item} key={item.image} />
+                  ) : index % 2 === 0 ? (
+                    <PubCardLarge pub={item} key={item.image} align={true} />
+                  ) : (
+                    <PubCardLarge pub={item} key={item.image} />
+                  )}
+                </React.Fragment>
+              );
+            })
+          ) : (
+            <Box sx={{ display: "flex", justifyContent:"center", width: "100%", marginTop: "4rem" }}>
+              <CircularProgress />
+            </Box>
+          )}
         </Grid>
       </div>
     </div>

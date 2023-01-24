@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Box, CircularProgress } from "@mui/material";
 import React from "react";
 // import { creatives } from "../Constants/creatives";
 import CreativeCard from "../Components/CreativeCard";
@@ -27,11 +27,24 @@ const Creatives = () => {
   return (
     <div className="publication-route-wrapper">
       <h1 style={{ textAlign: "center" }}>Creative</h1>
-      <div style={{ margin: "2rem 0", minHeight: "100vh"}}>
+      <div style={{ margin: "2rem 0", minHeight: "100vh" }}>
         <Grid container spacing={4} justifyContent="center">
-          {creativesArray.map((x) => {
-            return <CreativeCard x={x} key={x.id} />;
-          })}
+          {creativesArray.length > 0 ? (
+            creativesArray.map((x) => {
+              return <CreativeCard x={x} key={x.id} />;
+            })
+          ) : (
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+                marginTop: "4rem",
+              }}
+            >
+              <CircularProgress />
+            </Box>
+          )}
         </Grid>
       </div>
     </div>

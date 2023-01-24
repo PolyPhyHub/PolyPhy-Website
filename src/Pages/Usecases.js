@@ -1,8 +1,8 @@
-import { Grid } from "@mui/material";
+import { Grid, Box, CircularProgress } from "@mui/material";
 import { PubCardLarge, PubCardSmall } from "../Components/PubCard";
 import React from "react";
 // import { usecases } from "../Constants/usecases";
-import {useMediaQuery} from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 
@@ -32,19 +32,37 @@ const Usecases = () => {
       <h1>Usecases and Experiments</h1>
       <div style={{ margin: "2rem 0", minHeight: "100vh" }}>
         <Grid container spacing={4}>
-          {usecaseArray.map((item, index) => {
-            return (
-              <React.Fragment key={index}>
-                {small ? (
-                  <PubCardSmall pub={item} type="usecase" key={item.image} />
-                ) : index % 2 === 0 ? (
-                  <PubCardLarge pub={item} type="usecase" key={item.image} align={true} />
-                ) : (
-                  <PubCardLarge pub={item} type="usecase" key={item.image} />
-                )}
-              </React.Fragment>
-            );
-          })}
+          {usecaseArray.length > 0 ? (
+            usecaseArray.map((item, index) => {
+              return (
+                <React.Fragment key={index}>
+                  {small ? (
+                    <PubCardSmall pub={item} type="usecase" key={item.image} />
+                  ) : index % 2 === 0 ? (
+                    <PubCardLarge
+                      pub={item}
+                      type="usecase"
+                      key={item.image}
+                      align={true}
+                    />
+                  ) : (
+                    <PubCardLarge pub={item} type="usecase" key={item.image} />
+                  )}
+                </React.Fragment>
+              );
+            })
+          ) : (
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+                marginTop: "4rem",
+              }}
+            >
+              <CircularProgress />
+            </Box>
+          )}
         </Grid>
       </div>
     </div>
