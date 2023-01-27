@@ -325,8 +325,9 @@
   img {
     height: 120px;
     width: 120px;
-    border-radius: 50%;
+    clip-path: circle();
     margin-right: 1.5rem;
+    object-fit: cover;
     @media #{$media-mobile} {
       height: 90px;
       width: 90px;

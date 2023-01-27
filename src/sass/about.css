@@ -420,8 +420,11 @@
 .team-card img {
   height: 120px;
   width: 120px;
-  border-radius: 50%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
   margin-right: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 550px) {

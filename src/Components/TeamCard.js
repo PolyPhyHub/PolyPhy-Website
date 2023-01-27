@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const TeamCard = ({ x }) => {
   return (
@@ -13,15 +13,15 @@ const TeamCard = ({ x }) => {
           <h3>{x.name}</h3>
           <p>{x.about}</p>
           <Grid container>
-            <a href={process.env.PUBLIC_URL+"/"}>
+            <a href={x.website}>
               <FontAwesomeIcon icon={faCode} />
             </a>
-            <a href={process.env.PUBLIC_URL+"/"}>
+            <a href={x.linkedin}>
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href={process.env.PUBLIC_URL+"/"}>
+            {/* <a href={process.env.PUBLIC_URL+"/"}>
               <FontAwesomeIcon icon={faTwitter} />
-            </a>
+            </a> */}
           </Grid>
         </div>
       </div>
