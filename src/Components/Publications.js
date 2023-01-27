@@ -39,11 +39,11 @@ const Publications = () => {
                 <React.Fragment key={index}>
                   {item.homepage === "TRUE" ? (
                     small ? (
-                      <PubCardSmall pub={item} key={item.image} />
+                      <PubCardSmall pub={item} type="publication" key={item.image} />
                     ) : index % 2 === 0 ? (
-                      <PubCardLarge pub={item} key={item.image} align={true} />
+                      <PubCardLarge pub={item} type="publication" key={item.image} align={true} />
                     ) : (
-                      <PubCardLarge pub={item} key={item.image} />
+                      <PubCardLarge pub={item} type="publication" key={item.image} />
                     )
                   ) : null}
                 </React.Fragment>

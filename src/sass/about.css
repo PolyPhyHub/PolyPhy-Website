@@ -82,6 +82,7 @@
   max-width: 1300px;
   margin: auto;
   padding: 2rem;
+  min-height: 60vh;
 }
 
 .publication-route-wrapper .detail-button,

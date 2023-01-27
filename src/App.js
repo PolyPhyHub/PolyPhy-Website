@@ -12,6 +12,7 @@ import Story from "./Pages/Story";
 import Home from "./Pages/Home";
 import ErrorPage from "./Pages/ErrorPage";
 import Opportunities from "./Pages/Opportunities";
+import Tutorials from "./Pages/Tutorials";
 
 const darkTheme = createTheme({
   palette: {
@@ -26,6 +27,7 @@ const AppRoutes = () => {
     { path: process.env.PUBLIC_URL+"/team", element: <TeamRooute /> },
     { path: process.env.PUBLIC_URL+"/usecases", element: <Usecases /> },
     { path: process.env.PUBLIC_URL+"/creatives", element: <Creatives /> },
+    { path: process.env.PUBLIC_URL+"/tutorials", element: <Tutorials /> },
     { path: process.env.PUBLIC_URL+"/story", element: <Story /> },
     { path: process.env.PUBLIC_URL+"/opportunities", element: <Opportunities /> },
     { path: "*", element: <ErrorPage /> },

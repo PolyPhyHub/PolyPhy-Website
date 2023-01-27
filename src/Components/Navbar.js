@@ -78,6 +78,14 @@ const Navlinks = ({ dir, sp }) => {
               Usecases
             </a>
           </li>
+          <li>
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/tutorials"}
+            >
+              Tutorials
+            </a>
+          </li>
         </ul>
       </li>
       <li className="dropdown-wrapper">
