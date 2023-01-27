@@ -108,9 +108,11 @@ const TeamRooute = () => {
             );
           })
         ) : (
-          <Box sx={{ width: "100px", marginTop: "2rem" }}>
-            <LinearProgress />
-          </Box>
+          <Grid container spacing={3} justifyContent="center">
+            <Box sx={{ width: "100px", marginTop: "2rem" }}>
+              <LinearProgress />
+            </Box>
+          </Grid>
         )}
       </div>
       <div style={{ margin: "4rem auto 2rem auto", maxWidth: "1200px" }}>
