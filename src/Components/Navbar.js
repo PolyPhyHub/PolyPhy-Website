@@ -127,10 +127,10 @@ const Navlinks = ({ dir, sp }) => {
         </ul>
       </li>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Want to join Polyphy's Slack Channel?</DialogTitle>
+        <DialogTitle>Want to join PolyPhy's Slack Channel?</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            If you want to interact with the developers of Polyphy and know more
+            If you want to interact with the developers of PolyPhy and know more
             about the software, feel free to request{" "}
             <a style={{ color: "#f7981b" }} href="mailto:oelek@ucsc.edu ">
               Dr. Oskar Elek

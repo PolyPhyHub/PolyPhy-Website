@@ -2,7 +2,7 @@ export const publications = [
   
   
   {
-    name: "Polyphy: Structural Analysis of Cosmological Datasets via Interactive Physarum Polycephalum Visualization",
+    name: "PolyPhy: Structural Analysis of Cosmological Datasets via Interactive Physarum Polycephalum Visualization",
     journal:
       "IEEE Transactions on Visualization and Computer Graphics (presented at VIS 2020)",
     image: "https://elek.pub/img/polyphorm_sm.jpg",

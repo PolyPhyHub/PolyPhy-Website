@@ -5,7 +5,7 @@ const Story = () => {
   return (
     <div className="story-route-wrapper">
       <div style={{ maxWidth: "1300px", margin: "auto" }}>
-        <h1 style={{ textAlign: "center" }}>The Polyphy Story</h1>
+        <h1 style={{ textAlign: "center" }}>The PolyPhy Story</h1>
         <div style={{ margin: "2rem 0" }}>
           <Grid
             container
@@ -26,22 +26,29 @@ const Story = () => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <p>
-                Rhizome Cosmology is made by , an open-source software that
-                combines an interactive implementation of a 3D Physarum machine,
-                and a simultaneous volume visualization of the generated
-                structures. Polyphy has enabled novel scientific results
-                through its ability to create detailed 3D density maps of the
-                Cosmic web from sparse cosmological data – catalogues of
-                galaxies and/or dark matter halos. Our main findings include the
-                attribution of a major portion of the intergalactic medium (IGM)
-                to the large-scale filamentary structure of Cosmic web , and an
-                explanation of an unusually large dispersion measure of a fast
-                radio burst (FRB) event .
+                Rhizome Cosmology is made by{" "}
+                <a
+                  href="https://github.com/PolyPhyHub"
+                  style={{ color: "#ff8400" }}
+                >
+                  PolyPhy
+                </a>
+                , an open-source software that combines an interactive
+                implementation of a 3D Physarum machine, and a simultaneous
+                volume visualization of the generated structures. PolyPhy has
+                enabled novel scientific results through its ability to create
+                detailed 3D density maps of the Cosmic web from sparse
+                cosmological data – catalogs of galaxies and/or dark matter
+                halos. Our main findings include the attribution of a major
+                portion of the intergalactic medium (IGM) to the large-scale
+                filamentary structure of the Cosmic web and an explanation of an
+                unusually large dispersion measure of a fast radio burst (FRB)
+                event.
               </p>
               <br />
               <p>
                 A detailed description of our simulation and visualization
-                methodology is given in our prior works . In this document, we
+                methodology is given in our prior works. In this document, we
                 visually map out the evolution of this project, focusing on
                 three aspects:
               </p>
@@ -88,17 +95,17 @@ const Story = () => {
               in the search for food sources. The near-optimality of these
               captivating structures has been demonstrated by numerous
               researchers, for instance in mapping out the greater Tokyo railway
-              system .
+              system.
             </p>
             <br />
             <p>
               In our case, the possibility of reconstructing the Cosmic web by a
               Physarum simulation (usually referred to as ‘Physarum machine’)
-              has been inspired by the work of Sage Jenson , who has created
+              has been inspired by the work of Sage Jenson, who has created
               GPU-accelerated interactive visual performances featuring the
               growth patterns of this organism. We build on the algorithm
-              proposed by Jeff Jones , extending this method to 3D and adopting
-              a probabilistic ruleset to increase the expressiveness and
+              proposed by Jeff Jones, extending this method to 3D and adopting a
+              probabilistic ruleset to increase the expressiveness and
               robustness of the model.
             </p>
           </Grid>
@@ -115,14 +122,21 @@ const Story = () => {
             <Grid item xs={12} sm={12} md={8}>
               <h2>Structure of the Cosmic web</h2>
               <p>
-                The is the largest recognized structure in the Universe,
-                composed of filaments that interconnect galaxies into a single,
-                cohesive network. One of the greatest challenges of modern
-                cosmology, this complex self-similar structure is composed of
-                diffuse gas and dark matter filaments with characteristic scales
-                between 1 Mpc and 100s of Mpc in length (by comparison, the
-                Milky Way is 0.03 Mpc in diameter). The matter density of the
-                filaments themselves varies across several orders of magnitude.
+                The{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Observable_universe"
+                  style={{ color: "#ff8400" }}
+                >
+                  Cosmic Web
+                </a>{" "}
+                is the largest recognized structure in the Universe, composed of
+                filaments that interconnect galaxies into a single, cohesive
+                network. One of the greatest challenges of modern cosmology,
+                this complex self-similar structure is composed of diffuse gas
+                and dark matter filaments with characteristic scales between 1
+                Mpc and 100s of Mpc in length (by comparison, the Milky Way is
+                0.03 Mpc in diameter). The matter density of the filaments
+                themselves varies across several orders of magnitude.
               </p>
               <br />
               <p>
@@ -151,15 +165,15 @@ const Story = () => {
           </Grid>
         </div>
       </div>
-      <div style={{ maxWidth: "1300px", margin: "auto"}}>
+      <div style={{ maxWidth: "1300px", margin: "auto" }}>
         <div style={{ margin: "2rem 0" }}>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={12} md={8}>
+            <Grid item xs={12} sm={12}>
               <div className="section3">
                 <h2>Galaxies, halos and filaments</h2>
                 <p>
                   The main challenge in reconstructing the Cosmic web stems from
-                  its extremely low matter density: beside a few most prominent
+                  its extremely low matter density. Beside a few most prominent
                   filaments, it is virtually invisible to even the most
                   sensitive instruments. Most evidence we have about its
                   distribution is indirect: the apparent alignment of the
@@ -172,16 +186,16 @@ const Story = () => {
                 </p>
               </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={8}>
+            <Grid item xs={12} sm={12}>
               <div className="section4">
-                <h2>Monte Carlo Physarum machine</h2>
+                <h2>Monte Carlo Physarum Machine</h2>
                 <p>
                   The method we designed to address this challenge is an
-                  agent-based model called Monte Carlo Physarum machine (MCPM).
+                  agent-based model called Monte Carlo Physarum Machine (MCPM).
                   The core idea of this model is to simulate a swarm of
                   particle-like agents (in the orders of 10⁶-10​⁷) that navigate
                   the 3D domain in the search of ‘food’ deposited by the input
-                  data: in our case, these are galaxies or dark matter clusters
+                  data. In our case, these are galaxies or dark matter clusters
                   called halos. The trajectories of all the agents are
                   superimposed over hundreds of simulation steps in a modality
                   dubbed trace. In the limit, this modality approaches a
@@ -201,12 +215,12 @@ const Story = () => {
               Due to the stochastic nature of MCPM, the structures traced by its
               agents are not merely discrete geometric instances. Rather, they
               approximate 3D probability density functions conditioned by the
-              input data and the model's parameters. 50 agents 10⁶ agents We
-              illustrate this by plotting the trajectories described by MCPM
-              agents over 500 iterations. While individual agents follow a
-              seemingly random set of paths (left panel), the superposition of
-              the entire swarm reveals an underlying ​‘fuzzy’ structure present
-              in the data (right panel).
+              input data and the model's parameters. We illustrate this by
+              plotting the trajectories described by MCPM agents over 500
+              iterations. While individual agents follow a seemingly random set
+              of paths (left panel), the superposition of the entire swarm
+              reveals an underlying ​‘fuzzy’ structure present in the data
+              (right panel).
             </p>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
@@ -230,7 +244,7 @@ const Story = () => {
                 The process of growing virtual Physarum is iterative and
                 typically takes 1-2 minutes to converge, depending on the
                 resolution of the deposit & trace fields and the number of
-                agents. Detailed performance figures are provided in .
+                agents.
               </p>
               <br />
               <p>
@@ -253,7 +267,13 @@ const Story = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
-            <div className="section4" style={{backgroundColor: "rgba(232, 117, 2, 0.401)", border: "none"}}>
+            <div
+              className="section4"
+              style={{
+                backgroundColor: "rgba(232, 117, 2, 0.401)",
+                border: "none",
+              }}
+            >
               <h2>Self-patterning</h2>
               <p>
                 Even without structured input data, MCPM remains true to its
@@ -272,7 +292,16 @@ const Story = () => {
 
         <br />
       </div>
-      <p style={{textAlign: "center"}}>To read more interesting information visit <a href="https://elek.pub/projects/Rhizome-Cosmology/" style={{color: "#ff8400"}}>this page</a></p>
+      <p style={{ textAlign: "center" }}>
+        Please see{" "}
+        <a
+          href="https://elek.pub/projects/Rhizome-Cosmology/"
+          style={{ color: "#ff8400" }}
+        >
+          this page
+        </a>{" "}
+        for additional information.
+      </p>
     </div>
   );
 };

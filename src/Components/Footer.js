@@ -12,7 +12,7 @@ const Footer = () => {
       >
         <Grid item xs={12} sm={12} md={3}>
           <a href="/">
-            <h1>Polyphy</h1>
+            <h1>PolyPhy</h1>
           </a>
         </Grid>
         <Grid item xs={12} sm={12} md={3}>
@@ -24,7 +24,9 @@ const Footer = () => {
             <a href="/story">
               <p>Story</p>
             </a>
-            <p>Documenation</p>
+            <a href="https://polyphy.readthedocs.io/">
+              <p>Documentation</p>
+            </a>
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={3}>
@@ -47,7 +49,9 @@ const Footer = () => {
             <a href="https://github.com/PolyPhyHub">
               <p>GitHub</p>
             </a>
-            <p>Slack</p>
+            <a href="/opportunities">
+              <p>Opportunities</p>
+            </a>
             <a href="/team">
               <p>Team</p>
             </a>
