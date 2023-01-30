@@ -5,7 +5,7 @@ const News = () => {
   return (
     <>
       <div className="news-wrapper">
-      <h2>POLYPHY UPDATES</h2>
+      <h2>PolyPhy Updates</h2>
       <br />
         <a
           className="twitter-timeline"

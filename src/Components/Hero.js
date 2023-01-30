@@ -9,19 +9,19 @@ const Hero = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={6}>
             <div className="content">
-              <h1>POLYPHY</h1>
+              <h1>PolyPhy</h1>
               <div className="heading-underline"></div>
               <p>
                 Structural Analysis of Cosmological Datasets via Interactive
                 Physarum Polycephalum Visualisation.
+                <br />
+                <br />
+                PolyPhy is an interactive tool to analyze intergalactic gas and
+                dark matter filaments (together known as 'Cosmic web') using the
+                Monte Carlo Physarum Machine (MCPM) algorithm inspired by the
+                foraging behavior of Physarum polycephalum 'slime mold'
               </p>
-              <p>
-                Polyphy is an interactive tool to analyze intergalactic gas
-                and dark matter filaments (together known as 'Cosmic web') using
-                the Monte Carlo Physarum Machine (MCPM) algorithm inspired by
-                the foraging behavior of Physarum polycephalum 'slime mold'.
-              </p>
-              <a href={process.env.PUBLIC_URL+"#about"}>Get Started !</a>
+              <a href={process.env.PUBLIC_URL + "#about"}>Get Started {">"}</a>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       <div className="cta-arrow-wrapper">
-        <Link href={process.env.PUBLIC_URL+"#about"} underline="none">
+        <Link href={process.env.PUBLIC_URL + "#about"} underline="none">
           <div className="cta-arrow"></div>
         </Link>
       </div>
