@@ -67,6 +67,7 @@
   max-width: 1300px;
   margin: auto;
   padding: 2rem;
+  min-height: 60vh;
 
   .detail-button {
     margin: 1rem;
@@ -187,7 +188,9 @@
     }
   }
 
-  .section2, .section3, .section4 {
+  .section2,
+  .section3,
+  .section4 {
     background-color: rgba(232, 117, 2, 0.401);
     padding: 2rem;
     margin: 4rem auto;
@@ -323,8 +326,9 @@
   img {
     height: 120px;
     width: 120px;
-    border-radius: 50%;
+    clip-path: circle();
     margin-right: 1.5rem;
+    object-fit: cover;
     @media #{$media-mobile} {
       height: 90px;
       width: 90px;
@@ -373,10 +377,11 @@
 }
 
 .github-contributor-wrapper {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .github-contributor {
@@ -414,7 +419,7 @@
     line-height: 120px;
     @media #{$media-tablet} {
       font-size: 40px;
-    line-height: 60px;
+      line-height: 60px;
     }
   }
 
@@ -424,5 +429,27 @@
     @media #{$media-tablet} {
       font-size: 15px;
     }
+  }
+}
+
+.opportunities-content {
+  margin: 2rem 0;
+  min-height: 100vh;
+  h3 {
+    font-weight: lighter;
+    text-transform: capitalize;
+    font-family: "Bitter", serif;
+  }
+  a {
+    font-size: 13px;
+    color: $theme-amber;
+    text-align: right;
+    margin-top: 10px;
+  }
+  a::hover {
+    text-decoration: underline;
+  }
+  @media #{$media-mobile} {
+    margin: 1rem 0;
   }
 }

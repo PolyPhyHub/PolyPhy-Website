@@ -6,14 +6,14 @@ import { useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 
-const Usecases = () => {
+const Tutorials = () => {
   const small = useMediaQuery("(max-width:1000px)");
 
   const [data, setData] = useState({});
 
   useEffect(() => {
     Papa.parse(
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTj_oHYtnb7xXNVwnqnQdMsAGMWgU86u3X7k4lStX5z3a_XUegElnIUybNo0AHhiodcGpu4T7h1Qqzy/pub?output=csv",
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGU0VUHmG7J6QOvlQYSLaUgBpfrqVEYnvzw3jC8TwmyIrDdCZElZYi4XgrjE_a1bi_4rH4r-NOXCz_/pub?output=csv",
       {
         download: true,
         header: true,
@@ -29,7 +29,7 @@ const Usecases = () => {
 
   return (
     <div className="publication-route-wrapper">
-      <h1>Usecases and Experiments</h1>
+      <h1>Tutorials</h1>
       <div style={{ margin: "2rem 0", minHeight: "100vh" }}>
         <Grid container spacing={4}>
           {usecaseArray.length > 0 ? (
@@ -37,16 +37,16 @@ const Usecases = () => {
               return (
                 <React.Fragment key={index}>
                   {small ? (
-                    <PubCardSmall pub={item} type="usecase" key={item.image} />
+                    <PubCardSmall pub={item} type="tutorial" key={item.image} />
                   ) : index % 2 === 0 ? (
                     <PubCardLarge
                       pub={item}
-                      type="usecase"
+                      type="tutorial"
                       key={item.image}
                       align={true}
                     />
                   ) : (
-                    <PubCardLarge pub={item} type="usecase" key={item.image} />
+                    <PubCardLarge pub={item} type="tutorial" key={item.image} />
                   )}
                 </React.Fragment>
               );
@@ -69,4 +69,4 @@ const Usecases = () => {
   );
 };
 
-export default Usecases;
+export default Tutorials;

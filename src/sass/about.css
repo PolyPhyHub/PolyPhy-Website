@@ -82,6 +82,7 @@
   max-width: 1300px;
   margin: auto;
   padding: 2rem;
+  min-height: 60vh;
 }
 
 .publication-route-wrapper .detail-button,
@@ -245,7 +246,9 @@
   }
 }
 
-.story-route-wrapper .section2, .story-route-wrapper .section3, .story-route-wrapper .section4 {
+.story-route-wrapper .section2,
+.story-route-wrapper .section3,
+.story-route-wrapper .section4 {
   background-color: rgba(232, 117, 2, 0.401);
   padding: 2rem;
   margin: 4rem auto;
@@ -254,12 +257,16 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .story-route-wrapper .section2, .story-route-wrapper .section3, .story-route-wrapper .section4 {
+  .story-route-wrapper .section2,
+  .story-route-wrapper .section3,
+  .story-route-wrapper .section4 {
     padding: 1rem;
   }
 }
 
-.story-route-wrapper .section2 img, .story-route-wrapper .section3 img, .story-route-wrapper .section4 img {
+.story-route-wrapper .section2 img,
+.story-route-wrapper .section3 img,
+.story-route-wrapper .section4 img {
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
@@ -297,7 +304,7 @@
 
 .news-wrapper {
   background-color: rgba(33, 33, 33, 0.621);
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
@@ -414,8 +421,11 @@
 .team-card img {
   height: 120px;
   width: 120px;
-  border-radius: 50%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
   margin-right: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 550px) {
@@ -470,7 +480,7 @@
 }
 
 .github-contributor-wrapper {
-  padding: 1rem;
+  padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,6 +489,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .github-contributor {
@@ -550,6 +561,34 @@
 @media only screen and (max-width: 756px) {
   .errorpage h4 {
     font-size: 15px;
+  }
+}
+
+.opportunities-content {
+  margin: 2rem 0;
+  min-height: 100vh;
+}
+
+.opportunities-content h3 {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-family: "Bitter", serif;
+}
+
+.opportunities-content a {
+  font-size: 13px;
+  color: #ff8400;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.opportunities-content a::hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 550px) {
+  .opportunities-content {
+    margin: 1rem 0;
   }
 }
 /*# sourceMappingURL=about.css.map */

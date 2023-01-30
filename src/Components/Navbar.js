@@ -6,9 +6,24 @@ import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
 
-const Navlinks = ({ dir, sp, setOpen }) => {
+const Navlinks = ({ dir, sp }) => {
   const mobile = useMediaQuery("(max-width:768px)");
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <Stack
@@ -17,19 +32,19 @@ const Navlinks = ({ dir, sp, setOpen }) => {
       alignItems={!mobile ? "center" : "left"}
     >
       <li>
-        <a className="navLinksMain" href={process.env.PUBLIC_URL+"/"}>
+        <a className="navLinksMain" href={process.env.PUBLIC_URL + "/"}>
           Home
         </a>
       </li>
       <li>
-        <a className="navLinksMain" href={process.env.PUBLIC_URL+"/story"}>
+        <a className="navLinksMain" href={process.env.PUBLIC_URL + "/story"}>
           Story
         </a>
       </li>
       <li>
         <a
           className="navLinksMain"
-          href={process.env.PUBLIC_URL+"/"}
+          href={"https://polyphy.readthedocs.io/"}
           target="_blank"
           rel="noreferrer"
         >
@@ -40,18 +55,35 @@ const Navlinks = ({ dir, sp, setOpen }) => {
         <p className="navLinksMain">Gallery</p>
         <ul className="dropdown">
           <li>
-            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/research"}>
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/research"}
+            >
               Research
             </a>
           </li>
           <li>
-            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/creatives"}>
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/creatives"}
+            >
               Creative
             </a>
           </li>
           <li>
-            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/usecases"}>
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/usecases"}
+            >
               Usecases
+            </a>
+          </li>
+          <li>
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/tutorials"}
+            >
+              Tutorials
             </a>
           </li>
         </ul>
@@ -65,22 +97,54 @@ const Navlinks = ({ dir, sp, setOpen }) => {
             </a>
           </li>
           <li>
-            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/"}>
-              Slack{" "}
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/opportunities"}
+            >
+              Opportunities{" "}
             </a>
           </li>
+          <li onClick={handleClickOpen}>
+            {/* eslint-disable-next-line */}
+            <a className="dropdown-links">Slack </a>
+          </li>
           <li>
-            <a className="dropdown-links" href="https://github.com/PolyPhyHub/PolyPhy/issues">
+            <a
+              className="dropdown-links"
+              href="https://github.com/PolyPhyHub/PolyPhy/issues"
+            >
               Discussions
             </a>
           </li>
           <li>
-            <a className="dropdown-links" href={process.env.PUBLIC_URL+"/team"}>
+            <a
+              className="dropdown-links"
+              href={process.env.PUBLIC_URL + "/team"}
+            >
               Team
             </a>
           </li>
         </ul>
       </li>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>Want to join Polyphy's Slack Channel?</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            If you want to interact with the developers of Polyphy and know more
+            about the software, feel free to request{" "}
+            <a style={{ color: "#f7981b" }} href="mailto:oelek@ucsc.edu ">
+              Dr. Oskar Elek
+            </a>{" "}
+            for the channel invitation.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Cancel</Button>
+          <Button variant="contained" href="mailto:oelek@ucsc.edu ">
+            Send Email
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Stack>
   );
 };
