@@ -18,7 +18,6 @@ const Tutorials = () => {
         download: true,
         header: true,
         complete: (results) => {
-          console.log(results.data);
           setData(results.data);
         },
       }
