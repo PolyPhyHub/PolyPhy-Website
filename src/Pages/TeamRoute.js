@@ -53,7 +53,6 @@ const TeamRooute = () => {
         download: true,
         header: true,
         complete: (results) => {
-          console.log(results.data);
           setData1(results.data);
         },
       }
@@ -67,7 +66,6 @@ const TeamRooute = () => {
         download: true,
         header: true,
         complete: (results) => {
-          console.log(results.data);
           setData2(results.data);
         },
       }

@@ -65,8 +65,9 @@ const Footer = () => {
           opacity: "0.6",
         }}
       >
-        Copyright © {new Date().getFullYear()} PolyPhy, Center of Research for
-        Open Source Software
+        Copyright © 2022-2023 PolyPhy name, original media and accompanying
+        websites. Developed under the Open Source Program Office at the
+        University of California in Santa Cruz.
       </p>
     </div>
   );

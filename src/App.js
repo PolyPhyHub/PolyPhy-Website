@@ -37,7 +37,6 @@ const AppRoutes = () => {
 };
 
 function App() {
-  console.log(process.env.PUBLIC_URL)
   return (
     <BrowserRouter>
       <ThemeProvider theme={darkTheme}>
