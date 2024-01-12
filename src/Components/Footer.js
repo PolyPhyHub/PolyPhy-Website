@@ -65,7 +65,7 @@ const Footer = () => {
           opacity: "0.6",
         }}
       >
-        Copyright © 2022-2023 PolyPhy name, original media and accompanying
+        Copyright © 2023-2024 PolyPhy name, original media and accompanying
         websites. Developed under the Open Source Program Office at the
         University of California in Santa Cruz.
       </p>
