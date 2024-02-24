@@ -12,6 +12,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import { useEffect } from "react";
 
 const Navlinks = ({ dir, sp }) => {
   const mobile = useMediaQuery("(max-width:768px)");
@@ -152,6 +153,18 @@ const Navlinks = ({ dir, sp }) => {
 const Navbar = () => {
   const mobile = useMediaQuery("(max-width:768px)");
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    };
+   window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="navbar">
