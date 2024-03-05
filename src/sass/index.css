@@ -857,7 +857,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #323232af;
+  background-color: #495057;
   position: absolute;
   left: -20%;
   z-index: 999;
