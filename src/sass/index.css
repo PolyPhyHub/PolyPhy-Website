@@ -862,6 +862,7 @@ a {
   left: -20%;
   z-index: 999;
   padding: 0.5rem 0.7rem;
+  backdrop-filter: blur(5px);
 }
 
 @media only screen and (max-width: 550px) {
